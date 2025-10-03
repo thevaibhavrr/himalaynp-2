@@ -228,7 +228,7 @@ export default function Products() {
   // Update product count when filter or search changes
   useEffect(() => {
     setProductCount(filteredProducts.length)
-  }, [activeFilter, searchTerm])
+  }, [activeFilter, searchTerm, filteredProducts.length])
 
   const handleFilterChange = (filter: string) => {
     setActiveFilter(filter)
@@ -504,7 +504,7 @@ export default function Products() {
                   <i className="flaticon-digestion"></i>
                 </div>
                 <h4>Easy Digestion</h4>
-                <p>Light and easily digestible oils that don't burden your digestive system while providing essential nutrients.</p>
+                <p>Light and easily digestible oils that don&apos;t burden your digestive system while providing essential nutrients.</p>
               </div>
             </div>
           </div>

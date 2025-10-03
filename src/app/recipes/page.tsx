@@ -52,7 +52,7 @@ export default function Recipes() {
       time: '20 mins',
       servings: '2 servings',
       difficulty: 'Easy',
-      description: 'A quick and nutritious vegetable stir-fry using light sunflower oil that doesn\'t overpower the natural flavors.',
+      description: 'A quick and nutritious vegetable stir-fry using light sunflower oil that doesn&apos;t overpower the natural flavors.',
       tags: ['Vegetarian', 'Healthy', 'Quick']
     },
     {
@@ -231,7 +231,7 @@ export default function Recipes() {
                   <span className="sub-title">Healthy Cooking</span>
                   <h2>Delicious Recipes with Our Premium Oils</h2>
                 </div>
-                <p>Discover the art of healthy cooking with Bharat Agro Oil's premium edible oils. Our naturally filtered oils enhance the flavor and nutritional value of your favorite dishes while promoting heart health and overall wellness.</p>
+                <p>Discover the art of healthy cooking with Bharat Agro Oil&apos;s premium edible oils. Our naturally filtered oils enhance the flavor and nutritional value of your favorite dishes while promoting heart health and overall wellness.</p>
                 <p>From traditional Indian recipes to modern fusion dishes, our oils are perfect for every cooking style - frying, sautéing, dressing, and more.</p>
                 <div className="about-button mt-4">
                   <a href="#recipe-categories" className="main-btn btn-yellow">Explore Recipes</a>
@@ -648,7 +648,7 @@ export default function Recipes() {
                   <i className="flaticon-digestion"></i>
                 </div>
                 <h4>Easy Digestion</h4>
-                <p>Light and easily digestible oils that don't burden your digestive system while providing essential nutrients.</p>
+                <p>Light and easily digestible oils that don&apos;t burden your digestive system while providing essential nutrients.</p>
               </div>
             </div>
           </div>

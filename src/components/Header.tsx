@@ -41,7 +41,7 @@ export default function Header() {
     <>
       {/* Preloader */}
       <div className="preloader" style={{ 
-        display: isLoading ? 'block' : 'none',
+        display: isLoading ? 'flex' : 'none',
         position: 'fixed',
         top: 0,
         left: 0,
@@ -49,7 +49,6 @@ export default function Header() {
         height: '100%',
         backgroundColor: '#000',
         zIndex: 9999,
-        display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
       }}>

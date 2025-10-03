@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 
 export default function About() {
@@ -11,7 +12,7 @@ export default function About() {
       <section className="page-banner bg_cover position-relative z-1"
         style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className="brand-card text-center">
-          <img src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo"   style={{maxWidth: '120px'}} />
+          <Image src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo" width={120} height={120} style={{maxWidth: '120px'}} />
           <h3>Bharat Agro Oil</h3>
           <p>Premium Edible Oils Since 1978</p>
         </div>
@@ -25,7 +26,7 @@ export default function About() {
               <div className="about-content-box content-box-gap mb-50">
                 <div className="section-title section-title-left wow fadeInUp mb-30">
                   <span className="sub-title">Our Legacy</span>
-                  <h2>India's Trusted Edible Oil Manufacturer Since 1978</h2>
+                  <h2>India&apos;s Trusted Edible Oil Manufacturer Since 1978</h2>
                 </div>
                 <p>For over four decades, Bharat Agro Oil has been a pioneer in the edible oil industry, dedicated to delivering purity, quality, and health in every drop. We are committed to providing premium quality, pure, and healthy edible oils to Indian families through our traditional extraction methods combined with modern technology.</p>
 
@@ -53,12 +54,12 @@ export default function About() {
             </div>
             <div className="col-lg-6">
               <div className="about-four_image-box text-right p-r mb-50 wow fadeInRight">
-                <img 
+                <Image 
                   src="https://m.media-amazon.com/images/I/81Q5EIg1a5L.jpg"
                   className="about-img_one" 
                   alt="Our Manufacturing Facility"
-                  
-                  
+                  width={500}
+                  height={400}
                   style={{maxWidth: '100%', height: 'auto', borderRadius: '10px'}}
                 />
                 <div className="about-img_two"

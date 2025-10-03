@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 
 export default function Contact() {
@@ -10,7 +11,7 @@ export default function Contact() {
       {/* Page Banner */}
       <section className="page-banner bg_cover p-r z-1" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}>
         <div className="brand-card text-center">
-          <img src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo"   style={{maxWidth: '120px'}} />
+          <Image src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo" width={120} height={120} style={{maxWidth: '120px'}} />
           <h3>Bharat Agro Oil</h3>
           <p>Premium Edible Oils Since 1978</p>
         </div>
@@ -24,7 +25,7 @@ export default function Contact() {
               <div className="contact-two_information-box">
                 <div className="section-title section-title-left mb-40 wow fadeInUp">
                   <span className="sub-title" style={{color: '#eece38', textDecoration: 'none'}}>Get In Touch</span>
-                  <h2 style={{color: '#333', fontSize: '32px', lineHeight: '1.3'}}>We're Here to Help You! Need Premium Quality Edible Oils or Distribution Partnership?</h2>
+                  <h2 style={{color: '#333', fontSize: '32px', lineHeight: '1.3'}}>We&apos;re Here to Help You! Need Premium Quality Edible Oils or Distribution Partnership?</h2>
                 </div>
                 <div className="row">
                   <div className="col-lg-4 col-md-6 col-sm-12">

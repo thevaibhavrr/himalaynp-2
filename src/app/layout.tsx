@@ -26,15 +26,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/assets/images/logo/new-logo.png" type="image/png" />
-        <link rel="stylesheet" href="/assets/fonts/fontawesome/css/all.min.css" />
-        <link rel="stylesheet" href="/assets/fonts/flaticon/flaticon.css" />
-        <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/assets/vendor/magnific-popup/dist/magnific-popup.css" />
-        <link rel="stylesheet" href="/assets/vendor/slick/slick.css" />
-        <link rel="stylesheet" href="/assets/vendor/nice-select/css/nice-select.css" />
-        <link rel="stylesheet" href="/assets/vendor/animate.css" />
-        <link rel="stylesheet" href="/assets/css/default.css" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
       <body className={inter.className}>
         {children}

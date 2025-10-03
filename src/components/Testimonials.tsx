@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Testimonials = () => {
   return (
@@ -16,10 +17,10 @@ const Testimonials = () => {
           <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
             <div className="testimonial-item text-center wow fadeInDown">
               <div className="author-thumb">
-                <img src="https://img.freepik.com/free-photo/young-handsome-man-wearing-casual-tshirt-blue-background-happy-face-smiling-with-crossed-arms-looking-camera-positive-person_839833-12963.jpg?semt=ais_hybrid&w=740&q=80" alt="Customer Image" style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
+                <Image src="https://img.freepik.com/free-photo/young-handsome-man-wearing-casual-tshirt-blue-background-happy-face-smiling-with-crossed-arms-looking-camera-positive-person_839833-12963.jpg?semt=ais_hybrid&w=740&q=80" alt="Customer Image" width={80} height={80} style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
               <div className="testimonial-content">
-                <p>"The purity of Bharat Agro's mustard oil is unmatched. Traditional taste with modern packaging. Our family has been using it for generations!" </p>
+                <p>&quot;The purity of Bharat Agro&apos;s mustard oil is unmatched. Traditional taste with modern packaging. Our family has been using it for generations!&quot; </p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Rajesh Kumar</h4>
@@ -34,7 +35,7 @@ const Testimonials = () => {
                 <img src="https://img.freepik.com/premium-photo/shouting-triumphantly-laughing-feeling-happy-excited-while-celebrating-success_1194-493374.jpg?semt=ais_incoming&w=740&q=80" alt="Customer Image" style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
               <div className="testimonial-content">
-                <p>"As a distributor, I appreciate their consistent quality and reliable supply. The products are always fresh and well-packaged." </p>
+                <p>&quot;As a distributor, I appreciate their consistent quality and reliable supply. The products are always fresh and well-packaged.&quot; </p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Sanjay Verma</h4>
@@ -49,7 +50,7 @@ const Testimonials = () => {
                 <img src="https://img.freepik.com/premium-photo/hispanic-young-man-standing-blue-background-smiling-with-open-mouth-fingers-pointing-forcing-cheerful-smile_839833-7529.jpg?semt=ais_hybrid&w=740&q=80" alt="Customer Image" style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
               <div className="testimonial-content">
-                <p>"The sunflower oil is light and perfect for daily cooking. Love that it's naturally filtered without chemical processing." </p>
+                <p>&quot;The sunflower oil is light and perfect for daily cooking. Love that it&apos;s naturally filtered without chemical processing.&quot; </p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Priya Sharma</h4>

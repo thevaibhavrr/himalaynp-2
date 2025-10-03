@@ -2,6 +2,7 @@
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Services() {
@@ -73,7 +74,7 @@ export default function Services() {
               <div className="page-title">
                 <h1>Our Services</h1>
                 <ul className="breadcrumbs-link">
-                  <li><a href="/">Home</a></li>
+                  <li><Link href="/">Home</Link></li>
                   <li className="active">Services</li>
                 </ul>
               </div>
