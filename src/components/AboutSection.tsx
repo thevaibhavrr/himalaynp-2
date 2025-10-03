@@ -7,14 +7,14 @@ const AboutSection = () => {
         <div className="row align-items-center">
           <div className="col-xl-5 col-lg-6">
             <div className="about-one_content-box mb-50">
-              <div className="section-title section-title-left mb-30 wow fadeInUp">
+              <div className="section-title section-title-left mb-30">
                 <span className="sub-title">About Us</span>
                 <h2>Trusted Name in Edible Oil Industry Since 1978</h2>
               </div>
-              <div className="quote-text mb-35 wow fadeInDown" data-wow-delay=".3s">
+              <div className="quote-text mb-35">
                 <p>We are a trusted name in the edible oil industry, dedicated to delivering purity, quality, and health in every drop. With our brand, we strive to bring premium-grade oils to households, hotels, and businesses.</p>
               </div>
-              <div className="tab-content-box wow fadeInUp">
+              <div className="tab-content-box">
                 <ul className="nav nav-tabs mb-20">
                   <li className="nav-item">
                     <a className="nav-link active" data-toggle="tab" href="#mission">Our Mission</a>
@@ -40,10 +40,10 @@ const AboutSection = () => {
           </div>
           <div className="col-xl-7 col-lg-6">
             <div className="about-one_image-box p-r mb-50 pl-100">
-              <div className="about-img_one wow" style={{maxWidth: '250px', height: 'auto', borderRadius: '10px'}}>
+              <div className="about-img_one" style={{maxWidth: '250px', height: 'auto', borderRadius: '10px'}}>
                 <img src="https://m.media-amazon.com/images/I/81Q5EIg1a5L._UF350,350_QL80_.jpg" alt="Mustard Oil" style={{width: '100%', height: 'auto', borderRadius: '10px'}} />
               </div>
-              <div className="about-img_two wow fadeInRight">
+              <div className="about-img_two">
                 <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/0ba4c099-476a-4401-b9a4-b377a1d688f2.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Soybean Oil" style={{width: '100%', height: 'auto', borderRadius: '10px'}} />
               </div>
             </div>
