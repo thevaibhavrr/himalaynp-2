@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font size reduction */
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+.main-btn {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.section-title h2 {
+  font-size: 1.6rem;
+}
+
+.section-title .sub-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  .main-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+/* Increase image box height */
+.offer-one_image-box {
+  min-height: 500px;
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  .offer-one_image-box {
+    min-height: 400px;
+    height: 400px;
+  }
+}
+
+.homa_page_banner {
+  min-height: 80vh !important;
+}
+
+/* Contact section styling */
+.contact-one {
+  background-color: white !important;
+  width: 100% !important;
+  box-shadow: none !important;
+}
+
+.contact-one .container-fluid {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.contact-one .row {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.contact-one_content-box,
+.contact-one_information-box {
+  background-color: white !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.contact-one_information-box {
+  background-image: none !important;
+}
+
+/* Contact section background image styling */
+.contact-one {
+  background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+.contact-overlay {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.contact-one .col-lg-6 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Footer text color */
+.footer-default p,
+.footer-default span,
+.footer-default li,
+.footer-default a,
+.footer-default h6 {
+  color: #FFFFFFb3 !important;
+}
+
+.footer-default h4,
+.footer-default h5 {
+  color: #FFFFFF !important;
+}
+
+/* Partner logos - ensure colorful display */
+.partner-item-two img,
+.partner-img img {
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.partner-item-two:hover img,
+.partner-img:hover img {
+  transform: scale(1.05);
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Remove any grayscale or black/white filters */
+.partner-slider-one img,
+.partner-item-two img,
+.partner-img img {
+  filter: grayscale(0%) !important;
+  -webkit-filter: grayscale(0%) !important;
+  filter: brightness(1) !important;
+  -webkit-filter: brightness(1) !important;
+}
