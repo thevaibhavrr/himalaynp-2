@@ -174,7 +174,7 @@ export default function Home() {
                   <div className="counter-inner">
                     <div className="text">
                       <h2 className="number"><span className="count">2000</span>+</h2>
-                      <p>MT Monthly Production</p>
+                      <p style={{whiteSpace: 'nowrap'}}>MT Monthly Production</p>
                     </div>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function Home() {
             </div>
             <div className="col-lg-4">
               <div className="img-holder mb-50 wow fadeInDown">
-                <img src="https://healthybuddha.in/image/catalog/cat%20icon/new%20addition%20latest.jpg" alt="Oil Benefits" />
+                <img src="https://scontent-del1-1.cdninstagram.com/v/t39.30808-6/506210739_1148388777329397_8214500637407023051_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=108&ig_cache_key=MzY1MjQ2OTMyNzQ1MjE3MTg0OA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2Mzh4MjA0OC5zZHIuQzMifQ%3D%3D&_nc_ohc=QH3ii9cGIkoQ7kNvwFaJqpy&_nc_oc=AdkROp_F9xcfLkKGhx8cfSe2ffBLyWp-t7SIVYjNithDvwgqXfgmGJ22XBs697MC8eA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_gid=3bejjFuhLgyulfAB2HaTVg&oh=00_AffWHQEbiASYQMSG0HZileZusbVKwKmq68zGjMvSswYpJw&oe=68E68909" alt="Oil Benefits" />
               </div>
             </div>
             <div className="col-lg-4">
@@ -441,7 +441,7 @@ export default function Home() {
             <div className="col-lg-12">
               <div className="blog-post-item-one mb-30 wow fadeInLeft">
                 <div className="post-thumbnail">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNSI-IIgSmtkTTWVkaMh8IbFn7sxSRuYJl7g&s" alt="Health Benefits" />
+                  <img src="https://asmitaorganicfarm.com/cdn/shop/articles/Feature-Image-2048x1229_6c4890b1-b8b6-420d-a5b2-8dd431f74712.jpg?v=1754292824&width=1100" alt="Health Benefits" />
                 </div>
                 <div className="entry-content">
                   <Link href="#" className="cat-btn">Health Benefits</Link>
@@ -456,7 +456,7 @@ export default function Home() {
               </div>
               <div className="blog-post-item-one mb-30 wow fadeInRight">
                 <div className="post-thumbnail">
-                  <img src="https://pbs.twimg.com/media/FnPwQgVWAAArqle.jpg" alt="Cooking Tips" />
+                  <img src="https://www.bhushanoils.com/wp-content/uploads/2024/12/Bhushan_Blog-Banner-oil-scaled.jpg" alt="Cooking Tips" />
                 </div>
                 <div className="entry-content">
                   <Link href="#" className="cat-btn">Cooking Tips</Link>
@@ -471,7 +471,7 @@ export default function Home() {
               </div>
               <div className="blog-post-item-one mb-30 wow fadeInLeft">
                 <div className="post-thumbnail">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaVuGs0mGSbOtExm_szLMCHqfZSR-3ZJF4WcW2hjTI9o7UhgwPigQ0WUEx4XUOqD9yqi0&usqp=CAU" alt="Recipes" />
+                  <img src="https://cdn.shopify.com/s/files/1/0623/7395/3675/files/Benefit_Image_9th_Aug_-_Sunflower_Oil_Blog.webp?v=1725277701" alt="Recipes" />
                 </div>
                 <div className="entry-content">
                   <Link href="#" className="cat-btn">Recipes</Link>
