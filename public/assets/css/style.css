@@ -2377,7 +2377,7 @@ button {
 /* Service Item CSS */
 .service-box {
   padding: 30px 30px 15px;
-  background-color: #181712;
+  /* background-color: #181712; */
   border-radius: 7px;
   border-bottom: 3px solid transparent;
   -webkit-transition: all 0.3s ease-out 0s;

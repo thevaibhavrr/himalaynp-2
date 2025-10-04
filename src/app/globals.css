@@ -129,7 +129,6 @@ h6 {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  /* background-attachment: fixed !important; */
 }
 
 /* Contact section background image styling */
@@ -189,4 +188,351 @@ h6 {
   -webkit-filter: grayscale(0%) !important;
   filter: brightness(1) !important;
   -webkit-filter: brightness(1) !important;
+}
+x
+/* Service Page Custom Styles */
+.service-hero-img {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.service-hero-img:hover {
+  transform: translateY(-5px);
+}
+.img-caption {
+  text-align: center;
+  margin-top: 10px;
+}
+.img-caption h6 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.img-caption p {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+.product-img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.product-img-container:hover {
+  transform: translateY(-5px);
+}
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(238, 206, 56, 0.9), rgba(238, 206, 56, 0.7));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+.product-img-container:hover .product-overlay {
+  opacity: 1;
+}
+.product-overlay h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.product-overlay p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+.service-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.service-gallery-item:hover {
+  transform: translateY(-5px);
+}
+.gallery-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(238, 206, 56, 0.9), rgba(238, 206, 56, 0.7));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+.service-gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+.gallery-overlay h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.gallery-overlay p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+.partner-item {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.partner-item:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1.1);
+}
+.partner-img img {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.partner-item:hover .partner-img img {
+  opacity: 1;
+  filter: grayscale(0%) brightness(1.1);
+}
+
+/* Service Cards Uniform Styling */
+.service-box {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border-color: #eece38;
+}
+
+.service-box .icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #635c3f, #f4d03f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.service-box .icon i {
+  font-size: 36px;
+  color: #2c2c2c;
+  transition: all 0.3s ease;
+}
+
+.service-box:hover .icon i {
+  transform: scale(1.1);
+  color: #eece38;
+}
+
+.service-box .text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-box .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box .title a {
+  color: #2c2c2c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-box .title a:hover {
+  color: #eece38;
+}
+
+.service-box p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Pattern for Service Cards */
+.service-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(238, 206, 56, 0.05), rgba(244, 208, 63, 0.05));
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Add subtle background images for each service */
+.service-box:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eece38" opacity="0.1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.service-box:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eece38" opacity="0.1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.service-box:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eece38" opacity="0.1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.service-box:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eece38" opacity="0.1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.service-box:nth-child(5)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eece38" opacity="0.1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.service-box:nth-child(6)::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eece38" opacity="0.1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+/* Ensure all cards have same height */
+.service-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-section .col-xl-2 {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .service-box {
+    padding: 25px 15px;
+  }
+  
+  .service-box .icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .service-box .icon i {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-box {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .service-box .title {
+    font-size: 16px;
+    min-height: 40px;
+  }
+}
+
+/* Banner minimum height */
+.page-banner {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    min-height: 500px;
+  }
 }
