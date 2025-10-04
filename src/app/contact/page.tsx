@@ -138,7 +138,7 @@ export default function Contact() {
             <div className="col-xl-7 col-lg-10">
               <div className="contact-three_content-box">
                 <div className="section-title section-title-left mb-40" style={{color: 'white'}}>
-                  <span className="sub-title" style={{color: '#eece38'}}>Send Us a Message</span>
+                  <span className="sub-title" style={{color: '#eece38' , textDecoration: 'none'}}>Send Us a Message</span>
                   <h2 style={{color: 'black'}}>Interested in Our Premium Edible Oils? Get In Touch!</h2>
                 </div>
                 <div className="contact-form">
