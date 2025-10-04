@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-4 col-md-12 footer-contact-item">
                 <div className="contact-info d-flex justify-content-center">
-                  <div className="site-logo text-center">
+                <div className="site-logo text-center" style={{backgroundColor: '#fff', padding: '10px', borderRadius: '8px'}}>
                     <Link href="/" className="brand-logo">
                       <img 
                         src="/assets/images/logo/new-logo.png" 
