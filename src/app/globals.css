@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Contact Form Focus Styles */
+.form-control:focus {
+  outline: none !important;
+  border-color: #FFD700 !important;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2) !important;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 193, 7, 0.4) !important;
+}
+
 /* Global font size reduction */
 body {
   font-size: 14px;
@@ -112,12 +124,17 @@ h6 {
 }
 
 .contact-one_information-box {
-  background-image: none !important;
+  /* background-image: none !important; */
+  background-image: url('https://t4.ftcdn.net/jpg/03/37/96/33/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  /* background-attachment: fixed !important; */
 }
 
 /* Contact section background image styling */
 .contact-one {
-  background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') !important;
+  /* background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80') !important; */
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;

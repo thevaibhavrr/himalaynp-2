@@ -330,97 +330,145 @@ export default function Home() {
       {/* Testimonials Section */}
       <Testimonials />
 
-      {/* Contact Section */}
-      <section className="contact-one p-r z-2" style={{backgroundImage: "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', width: '100%', position: 'relative'}}>
-        <div className="contact-overlay" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(255, 255, 255, 0.9)', zIndex: 1}}></div>
-        <div className="container-fluid" style={{width: '100%', padding: 0, position: 'relative', zIndex: 2}}>
-          <div className="row no-gutters" style={{width: '100%', margin: 0}}>
-            <div className="col-lg-6" style={{backgroundColor: 'rgba(255, 255, 255, 0.95)', padding: '60px 40px', backdropFilter: 'blur(10px)'}}>
-              <div className="contact-one_content-box wow fadeInLeft">
-                <div className="contact-wrapper">
-                  <div className="section-title section-title-left mb-40">
-                    <span className="sub-title">Get In Touch</span>
-                    <h2>Interested in Our Products? Become a Distributor Today!</h2>
-                  </div>
-                  <div className="contact-form">
-                    <form id="contactForm" action="/api/contact" name="contactForm" method="post">
-                      <div className="form_group form-group">
-                        <input type="text" className="form_control" placeholder="Full Name" id="name" name="name" required data-error="Please enter your name" />
-                        <div className="help-block with-errors"></div>
-                      </div>
-                      <div className="form_group form-group">
-                        <input type="email" className="form_control" placeholder="Email Address" id="email" name="email" required data-error="Please enter your Email Address" />
-                        <div className="help-block with-errors"></div>
-                      </div>
-                      <div className="form_group form-group">
-                        <input type="tel" className="form_control" placeholder="Phone Number" id="phone" name="phone" required />
-                        <div className="help-block with-errors"></div>
-                      </div>
-                      <div className="form_group form-group">
-                        <input type="text" className="form_control" placeholder="Business Location" id="location" name="location" required />
-                        <div className="help-block with-errors"></div>
-                      </div>
-                      <div className="form_group form-group">
-                        <textarea className="form_control" placeholder="Your Message or Business Inquiry" id="message" name="message" required data-error="Please enter your Message"></textarea>
-                        <div className="help-block with-errors"></div>
-                      </div>
-                      <div className="form_group form-group">
-                        <button type="submit" className="main-btn btn-yellow">Send Inquiry</button>
-                        <div id="msgSubmit" className="hidden"></div>
-                      </div>
-                    </form>
-                  </div>
+     {/* Contact Section - Yellow Theme */}
+     <section className="contact-one p-r z-2 bg-white">
+      <div className="container-fluid">
+        <div className="row no-gutters">
+          <div className="col-lg-6">
+            <div className="contact-one_content-box wow fadeInLeft">
+              <div className="contact-wrapper">
+                <div className="section-title section-title-left mb-40">
+                  <span className="sub-title">Get In Touch</span>
+                  <h2>Interested in Our Products? Become a Distributor Today!</h2>
+                </div>
+                <div className="contact-form">
+                  <form 
+                    id="contactForm" 
+                    name="contactForm" 
+                    method="post"
+                  >
+                    <div className="form_group form-group">
+                      <input 
+                        type="text" 
+                        className="form_control" 
+                        placeholder="Full Name" 
+                        id="name" 
+                        name="name" 
+                        required 
+                      />
+                    </div>
+                    <div className="form_group form-group">
+                      <input 
+                        type="email" 
+                        className="form_control" 
+                        placeholder="Email Address" 
+                        id="email" 
+                        name="email" 
+                        required 
+                      />
+                    </div>
+                    <div className="form_group form-group">
+                      <input 
+                        type="tel" 
+                        className="form_control" 
+                        placeholder="Phone Number" 
+                        id="phone" 
+                        name="phone" 
+                        required 
+                      />
+                    </div>
+                    <div className="form_group form-group">
+                      <input 
+                        type="text" 
+                        className="form_control" 
+                        placeholder="Business Location" 
+                        id="location" 
+                        name="location" 
+                        required 
+                      />
+                    </div>
+                    <div className="form_group form-group">
+                      <textarea 
+                        className="form_control" 
+                        placeholder="Your Message or Business Inquiry" 
+                        id="message" 
+                        name="message" 
+                        required 
+                      />
+                    </div>
+                    <div className="form_group form-group">
+                      <button type="submit" className="main-btn btn-yellow">
+                        Send Inquiry
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6" style={{backgroundColor: 'rgba(255, 255, 255, 0.95)', padding: '60px 40px', backdropFilter: 'blur(10px)'}}>
-              <div className="contact-one_information-box wow fadeInRight" style={{background: 'transparent', boxShadow: 'none'}}>
-                <div className="information-box">
-                  <h3>Contact Information</h3>
-                  <p>Get in touch with us for bulk orders, distribution inquiries, or any questions about our products.</p>
-                  <div className="information-item_one d-flex mb-25">
-                    <div className="icon">
-                      <i className="flaticon-placeholder"></i>
-                    </div>
-                    <div className="info">
-                      <span className="sub-title mb-1">Factory Address</span>
-                      <h5>Khasra No. 118 & 120, Sikeda Road Industrial Area, Modinagar 201204, Distt. GZB, UP</h5>
-                    </div>
+          </div>
+          <div className="col-lg-6">
+            <div 
+              className="contact-one_information-box bg_cover wow fadeInRight" 
+              style={{ backgroundImage: "url('https://companyformationindia.com/images/c.jpg')" }}
+            >
+              <div className="information-box"
+              >
+                <h3>Contact Information</h3>
+                <p>Get in touch with us for bulk orders, distribution inquiries, or any questions about our products.</p>
+                
+                <div className="information-item_one d-flex mb-25">
+                  <div className="icon">
+                    <i className="flaticon-placeholder"></i>
                   </div>
-                  <div className="information-item_one d-flex mb-25">
-                    <div className="icon">
-                      <i className="flaticon-email"></i>
-                    </div>
-                    <div className="info">
-                      <span className="sub-title mb-1">Email Address</span>
-                      <h5><a href="mailto:bharatagrooil@yahoo.in">bharatagrooil@yahoo.in</a></h5>
-                    </div>
+                  <div className="info">
+                    <span className="sub-title mb-1">Factory Address</span>
+                    <h5>Khasra No. 118 & 120, Sikeda Road Industrial Area, Modinagar 201204, Distt. GZB, UP</h5>
                   </div>
-                  <div className="information-item_one d-flex mb-25">
-                    <div className="icon">
-                      <i className="flaticon-phone-call"></i>
-                    </div>
-                    <div className="info">
-                      <span className="sub-title mb-1">Phone Number</span>
-                      <h5><a href="tel:+919219450111">+91 9219450111</a></h5>
-                    </div>
+                </div>
+                
+                <div className="information-item_one d-flex mb-25">
+                  <div className="icon">
+                    <i className="flaticon-email"></i>
                   </div>
-                  <div className="information-item_one d-flex mb-25">
-                    <div className="icon">
-                      <i className="fab fa-whatsapp"></i>
-                    </div>
-                    <div className="info">
-                      <span className="sub-title mb-1">WhatsApp</span>
-                      <h5><a href="https://wa.me/919219450111">+91 9219450111</a></h5>
-                    </div>
+                  <div className="info">
+                    <span className="sub-title mb-1">Email Address</span>
+                    <h5>
+                      <a href="mailto:bharatagrooil@yahoo.in">bharatagrooil@yahoo.in</a>
+                    </h5>
+                  </div>
+                </div>
+                
+                <div className="information-item_one d-flex mb-25">
+                  <div className="icon">
+                    <i className="flaticon-phone-call"></i>
+                  </div>
+                  <div className="info">
+                    <span className="sub-title mb-1">Phone Number</span>
+                    <h5>
+                      <a href="tel:+919219450111">+91 9219450111</a>
+                    </h5>
+                  </div>
+                </div>
+                
+                <div className="information-item_one d-flex mb-25">
+                  <div className="icon">
+                    <i className="fab fa-whatsapp"></i>
+                  </div>
+                  <div className="info">
+                    <span className="sub-title mb-1">WhatsApp</span>
+                    <h5>
+                      <a href="https://wa.me/919219450111" target="_blank" rel="noopener noreferrer">
+                        +91 9219450111
+                      </a>
+                    </h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </div>
+    </section>
       {/* Blog Section */}
       <section className="blog-section p-r z-1 pt-130 pb-100">
         <div className="container">

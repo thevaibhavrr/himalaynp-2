@@ -3228,7 +3228,8 @@ button {
 
 /* Offer Section CSS */
 .offer-section-one {
-  margin-bottom: -230px; }
+  margin-bottom: -230px;
+ }
 
 .offer-one_image-box {
   position: relative;
@@ -4536,7 +4537,7 @@ button {
 
 /* Testimonial One */
 .testimonial-one {
-  padding: 310px 0 465px; }
+  padding: 240px 0 450px; }
   .testimonial-one .container-fluid {
     padding-left: 170px;
     padding-right: 170px; }

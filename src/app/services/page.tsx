@@ -13,28 +13,28 @@ export default function Services() {
     {
       id: 1,
       title: 'Bulk Oil Supply',
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.shutterstock.com/image-photo/sunflower-oil-bottle-moving-on-600nw-1184476798.jpg',
       description: 'Large quantity supply for restaurants, hotels, and commercial establishments with competitive pricing and reliable delivery.',
       link: '/bulk-supply'
     },
     {
       id: 2,
       title: 'Distribution Network',
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/492305653/MA/PD/KI/71213049/food-oil-cold-storage-room-service.jpg',
       description: 'Wide distribution network across multiple states with reliable delivery and excellent customer service.',
       link: '/distribution'
     },
     {
       id: 3,
       title: 'Quality Assurance',
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      image: 'https://tiimg.tistatic.com/fp/1/007/018/edible-oil-testing-services-444.jpg',
       description: 'Rigorous quality control and FSSAI certification for all products ensuring the highest standards.',
       link: '/quality-assurance'
     },
     {
       id: 4,
       title: 'Partnership Program',
-      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      image: 'https://www.afasystemsinc.com/wp-content/uploads/2024/09/1-1080x628.jpg',
       description: 'Become our distributor and grow your business with us through our comprehensive partnership program.',
       link: '/partnership'
     }
@@ -84,7 +84,7 @@ export default function Services() {
             <div className="col-xl-8 col-lg-7">
               <div className="service-details-wrapper">
                 <div className="img-holder">
-                  <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bharat Agro Oil Services" style={{width: '100%', height: '400px', objectFit: 'cover', borderRadius: '15px'}} />
+                  <img src="https://www.shutterstock.com/image-photo/sunflower-oil-bottle-moving-on-600nw-1184476798.jpg" alt="Bharat Agro Oil Services" style={{width: '100%', height: '400px', objectFit: 'cover', borderRadius: '15px'}} />
                 </div>
                 <div className="content text-center">
                   <h3 className="title">Premium Edible Oil Solutions</h3>
@@ -116,7 +116,7 @@ export default function Services() {
                   </div>
                   
                   <div className="content-img">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Oil Manufacturing Process" style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px'}} />
+                    <img src="https://tiimg.tistatic.com/fp/1/007/018/edible-oil-testing-services-444.jpg" alt="Oil Manufacturing Process" style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px'}} />
                   </div>
                   
                   <h4>Comprehensive Service Benefits</h4>
@@ -203,7 +203,7 @@ export default function Services() {
                   </ul>
                 </div>
                 
-                <div className="widget contact-info-widget bg_cover mb-40" style={{backgroundImage: "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '30px', borderRadius: '15px'}}>
+                <div className="widget contact-info-widget bg_cover mb-40" style={{backgroundImage: "url('https://tiimg.tistatic.com/fp/1/007/018/edible-oil-testing-services-444.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', padding: '30px', borderRadius: '15px'}}>
                   <div className="contact-info-box text-center">
                     <div className="icon">
                       <i className="far fa-phone"></i>

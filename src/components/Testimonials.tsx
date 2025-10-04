@@ -20,7 +20,7 @@ const Testimonials = () => {
                 <Image src="https://img.freepik.com/free-photo/young-handsome-man-wearing-casual-tshirt-blue-background-happy-face-smiling-with-crossed-arms-looking-camera-positive-person_839833-12963.jpg?semt=ais_hybrid&w=740&q=80" alt="Customer Image" width={80} height={80} style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
               <div className="testimonial-content">
-                <p>&quot;The purity of Bharat Agro&apos;s mustard oil is unmatched. Traditional taste with modern packaging. Our family has been using it for generations!&quot; </p>
+                <p>&quot;The purity of Bharat Agro&apos;s mustard oil is unmatched. Traditional taste with modern packaging.   </p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Rajesh Kumar</h4>
