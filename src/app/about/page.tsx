@@ -62,8 +62,9 @@ export default function About() {
             </div>
             <div className="col-lg-6">
               <div className="about-four_image-box text-right p-r mb-50 wow fadeInRight">
-                <Image 
-                  src="https://m.media-amazon.com/images/I/81Q5EIg1a5L.jpg"
+                <img
+                  // src="https://m.media-amazon.com/images/I/81Q5EIg1a5L.jpg"
+                  src="https://scontent-del1-2.cdninstagram.com/v/t39.30808-6/548019569_1227587119409562_3990676163613314976_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=106&ig_cache_key=MzcyMTMwODYxNTgzNzEzMDg2Mw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2Mzh4MjA0OC5zZHIuQzMifQ%3D%3D&_nc_ohc=19RAAx5dWmMQ7kNvwHIxFci&_nc_oc=AdlkUFjG9m4zIYmW-XIeu4NgbArK1wguW3sJDTs23pjIG3rHamHPHRJtHuPWp5WkerU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-del1-2.cdninstagram.com&_nc_gid=AZuLWfYW4gHIrHBAFQ39kA&oh=00_AfdsC50rIh0N876Ne_ZRMC7v31_nPh2nF8RFP_0O3YTsdA&oe=68E681E0"
                   className="about-img_one" 
                   alt="Our Manufacturing Facility"
                   width={500}
@@ -589,7 +590,7 @@ export default function About() {
             <div className="col-lg-6 col-md-12">
               <div className="facility-item mb-40 wow fadeInLeft">
                 <div className="facility-img">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  <img src="https://www.shutterstock.com/image-photo/sunflower-oil-bottle-moving-on-600nw-1184476798.jpg"
                     alt="Manufacturing Plant"
                     style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)'}} />
                 </div>
@@ -602,7 +603,7 @@ export default function About() {
             <div className="col-lg-6 col-md-12">
               <div className="facility-item mb-40 wow fadeInRight">
                 <div className="facility-img">
-                  <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  <img src="https://tiimg.tistatic.com/fp/1/007/018/edible-oil-testing-services-444.jpg"
                     alt="Quality Lab"
                     style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)'}} />
                 </div>
@@ -615,7 +616,7 @@ export default function About() {
             <div className="col-lg-6 col-md-12">
               <div className="facility-item mb-40 wow fadeInLeft">
                 <div className="facility-img">
-                  <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  <img src="https://5.imimg.com/data5/SELLER/Default/2025/2/492305653/MA/PD/KI/71213049/food-oil-cold-storage-room-service.jpg"
                     alt="Storage Facility"
                     style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)'}} />
                 </div>
@@ -628,7 +629,7 @@ export default function About() {
             <div className="col-lg-6 col-md-12">
               <div className="facility-item mb-40 wow fadeInRight">
                 <div className="facility-img">
-                  <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  <img src="https://www.afasystemsinc.com/wp-content/uploads/2024/09/1-1080x628.jpg"
                     alt="Packaging Unit"
                     style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)'}} />
                 </div>
@@ -824,41 +825,50 @@ export default function About() {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div className="team-member_one text-center mb-40 wow fadeInUp">
-                <div className="member-img">
+              <div className="team-member_one text-center mb-40 wow fadeInUp" style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
+                <div className="member-img" style={{height: '300px', overflow: 'hidden', borderRadius: '15px', marginBottom: '20px'}}>
                   <img src="https://media.istockphoto.com/id/640071044/photo/ill-find-the-cure.jpg?s=612x612&w=0&k=20&c=wJuZO-_-Yfs39KkEn4Ekd6fG8xqZi7DFcxuWHzflxR8="
-                    alt="Quality Manager" />
+                    alt="Quality Manager" 
+                    style={{width: '100%', height: '100%', objectFit: 'cover'}} />
                 </div>
-                <div className="member-info">
-                  <h3 className="title"><a href="#">Quality Control Team</a></h3>
-                  <p className="position">Ensuring Purity & Standards</p>
-                  <p>Dedicated professionals maintaining highest quality standards in every batch</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div className="team-member_one text-center mb-40 wow fadeInDown">
-                <div className="member-img">
-                  <img src="https://www.shutterstock.com/image-photo/engineer-team-full-skill-quality-260nw-2111911970.jpg"
-                    alt="Production Team" />
-                </div>
-                <div className="member-info">
-                  <h3 className="title"><a href="#">Production Experts</a></h3>
-                  <p className="position">Traditional + Modern Methods</p>
-                  <p>Skilled team combining traditional knowledge with modern technology</p>
+                <div className="member-info" style={{flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                  <div>
+                    <h3 className="title"><a href="#">Quality Control Team</a></h3>
+                    <p className="position">Ensuring Purity & Standards</p>
+                    <p>Dedicated professionals maintaining highest quality standards in every batch</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div className="team-member_one text-center mb-40 wow fadeInUp">
-                <div className="member-img">
+              <div className="team-member_one text-center mb-40 wow fadeInDown" style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
+                <div className="member-img" style={{height: '300px', overflow: 'hidden', borderRadius: '15px', marginBottom: '20px'}}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLvB-jAy0MwvyGsxTcHtdtnYxzeAbmkI25-Q&s"
+                    alt="Production Team" 
+                    style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                </div>
+                <div className="member-info" style={{flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                  <div>
+                    <h3 className="title"><a href="#">Production Experts</a></h3>
+                    <p className="position">Traditional + Modern Methods</p>
+                    <p>Skilled team combining traditional knowledge with modern technology</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div className="team-member_one text-center mb-40 wow fadeInUp" style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
+                <div className="member-img" style={{height: '300px', overflow: 'hidden', borderRadius: '15px', marginBottom: '20px'}}>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4n8VUVHAYGpSQRDdCRPSsjISnLOtPS-T7OQ&s"
-                    alt="R&D Team" />
+                    alt="R&D Team" 
+                    style={{width: '100%', height: '100%', objectFit: 'cover'}} />
                 </div>
-                <div className="member-info">
-                  <h3 className="title"><a href="#">R&D Department</a></h3>
-                  <p className="position">Innovation & Development</p>
-                  <p>Continuous research for better products and improved processes</p>
+                <div className="member-info" style={{flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                  <div>
+                    <h3 className="title"><a href="#">R&D Department</a></h3>
+                    <p className="position">Innovation & Development</p>
+                    <p>Continuous research for better products and improved processes</p>
+                  </div>
                 </div>
               </div>
             </div>
