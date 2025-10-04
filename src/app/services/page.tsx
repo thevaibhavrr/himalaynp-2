@@ -71,13 +71,7 @@ export default function Services() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10">
-              <div className="page-title">
-                <h1>Our Services</h1>
-                <ul className="breadcrumbs-link">
-                  <li><Link href="/">Home</Link></li>
-                  <li className="active">Services</li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </div>

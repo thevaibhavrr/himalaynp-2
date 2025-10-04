@@ -10,7 +10,15 @@ export default function About() {
       
       {/* Page Banner */}
       <section className="page-banner bg_cover position-relative z-1"
-        style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        style={{
+          backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center',
+          minHeight: '600px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
         <div className="brand-card text-center">
           <Image src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo" width={120} height={120} style={{maxWidth: '120px'}} />
           <h3>Bharat Agro Oil</h3>
