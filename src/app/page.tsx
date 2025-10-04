@@ -1,3 +1,5 @@
+'use client'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AboutSection from '@/components/AboutSection'
@@ -5,8 +7,85 @@ import PartnersSection from '@/components/PartnersSection'
 import ProductGallery from '@/components/ProductGallery'
 import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    // Initialize slider after component mounts
+    const initializeSlider = () => {
+      if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
+        // Destroy existing slider if it exists
+        if (window.$('.hero-slider-one').hasClass('slick-initialized')) {
+          window.$('.hero-slider-one').slick('unslick')
+        }
+        
+        // Initialize the slider
+        window.$('.hero-slider-one').slick({
+          dots: false,
+          arrows: true,
+          infinite: true,
+          speed: 400,
+          fade: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: '<button type="button" class="slick-arrow prev"><i class="fas fa-chevron-left"></i></button>',
+          nextArrow: '<button type="button" class="slick-arrow next"><i class="fas fa-chevron-right"></i></button>',
+          responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                arrows: false
+              }
+            }
+          ]
+        })
+      } else {
+        // Fallback: If jQuery/Slick is not available, show first slide
+        console.log('Slider initialization failed, showing first slide as fallback')
+        const slides = document.querySelectorAll('.single-slider')
+        if (slides.length > 0) {
+          slides.forEach((slide, index) => {
+            if (index === 0) {
+              (slide as HTMLElement).style.display = 'block'
+            } else {
+              (slide as HTMLElement).style.display = 'none'
+            }
+          })
+        }
+      }
+    }
+
+    // Try multiple times to initialize slider
+    const tryInitialize = () => {
+      if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
+        initializeSlider()
+      } else {
+        // Retry after 200ms
+        setTimeout(tryInitialize, 200)
+      }
+    }
+
+    // Initialize slider after a short delay to ensure DOM is ready
+    const timer = setTimeout(tryInitialize, 100)
+    
+    return () => {
+      clearTimeout(timer)
+      // Cleanup slider on unmount
+      if (typeof window !== 'undefined' && window.$ && window.$('.hero-slider-one').hasClass('slick-initialized')) {
+        window.$('.hero-slider-one').slick('unslick')
+      }
+    }
+  }, [])
+
+  // Add global jQuery type declaration
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      (window as any).$ = (window as any).jQuery
+    }
+  }, [])
   return (
     <>
       <Header />
