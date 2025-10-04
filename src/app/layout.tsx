@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   description: 'Bharat Agro Oil - Premium quality edible oils manufacturer since 1978. Natural, pure, and healthy cooking oils.',
   keywords: 'edible oil, mustard oil, sunflower oil, soybean oil, cooking oil, premium oil, Bharat Agro Oil',
   authors: [{ name: 'Bharat Agro Oil' }],
+  icons: {
+    icon: '/assets/images/logo/new-logo.png',
+    shortcut: '/assets/images/logo/new-logo.png',
+    apple: '/assets/images/logo/new-logo.png',
+  },
 }
 
 export const viewport = {
@@ -25,7 +30,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/assets/images/logo/new-logo.png" type="image/png" />
         <link rel="stylesheet" href="/assets/fonts/fontawesome/css/all.min.css" />
         <link rel="stylesheet" href="/assets/fonts/flaticon/flaticon.css" />
         <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css" />
