@@ -295,12 +295,15 @@ export default function Recipes() {
             {filteredRecipes.map(recipe => (
               <div key={recipe.id} className="col-lg-4 col-md-6" data-category={recipe.category} style={{marginBottom: '30px'}}>
                 <div className="recipe-card" style={{
+                  border: '1px solid #e9ecef',
                   borderRadius: '15px',
                   overflow: 'hidden',
                   boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                   transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                   background: 'white',
-                  height: '100%'
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
                 }}>
                   <div className="recipe-img" style={{height: '250px', overflow: 'hidden'}}>
                     <img 
@@ -309,47 +312,59 @@ export default function Recipes() {
                       style={{width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease'}}
                     />
                   </div>
-                  <div className="recipe-content" style={{padding: '25px'}}>
-                    <div className="recipe-meta" style={{display: 'flex', justifyContent: 'space-between', marginBottom: '15px', fontSize: '14px', color: '#666'}}>
-                      <span style={{display: 'flex', alignItems: 'center'}}>
-                        <i className="far fa-clock" style={{marginRight: '5px', color: '#eece38'}}></i>
-                        {recipe.time}
-                      </span>
-                      <span style={{display: 'flex', alignItems: 'center'}}>
-                        <i className="far fa-user" style={{marginRight: '5px', color: '#eece38'}}></i>
-                        {recipe.servings}
-                      </span>
-                      <span style={{display: 'flex', alignItems: 'center'}}>
-                        <i className="far fa-fire" style={{marginRight: '5px', color: '#eece38'}}></i>
-                        {recipe.difficulty}
-                      </span>
-                    </div>
-                    <h4 className="recipe-title" style={{fontSize: '20px', fontWeight: 600, marginBottom: '15px', lineHeight: 1.4}}>{recipe.name}</h4>
-                    <p className="recipe-desc" style={{color: '#666', marginBottom: '20px', lineHeight: 1.6}}>{recipe.description}</p>
-                    <div className="recipe-tags" style={{display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px'}}>
-                      {recipe.tags.map((tag, index) => (
-                        <span key={index} className="recipe-tag" style={{
-                          background: '#f8f9fa',
-                          padding: '5px 12px',
-                          borderRadius: '20px',
-                          fontSize: '12px',
-                          color: '#555'
-                        }}>
-                          {tag}
+                  <div className="recipe-content" style={{
+                    padding: '25px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    flex: 1,
+                    justifyContent: 'space-between'
+                  }}>
+                    <div>
+                      <div className="recipe-meta" style={{display: 'flex', justifyContent: 'space-between', marginBottom: '15px', fontSize: '14px', color: '#666'}}>
+                        <span style={{display: 'flex', alignItems: 'center'}}>
+                          <i className="far fa-clock" style={{marginRight: '5px', color: '#eece38'}}></i>
+                          {recipe.time}
                         </span>
-                      ))}
+                        <span style={{display: 'flex', alignItems: 'center'}}>
+                          <i className="far fa-user" style={{marginRight: '5px', color: '#eece38'}}></i>
+                          {recipe.servings}
+                        </span>
+                        <span style={{display: 'flex', alignItems: 'center'}}>
+                          <i className="far fa-fire" style={{marginRight: '5px', color: '#eece38'}}></i>
+                          {recipe.difficulty}
+                        </span>
+                      </div>
+                      <h4 className="recipe-title" style={{fontSize: '20px', fontWeight: 600, marginBottom: '15px', lineHeight: 1.4}}>{recipe.name}</h4>
+                      <p className="recipe-desc" style={{color: '#666', marginBottom: '20px', lineHeight: 1.6}}>{recipe.description}</p>
+                      <div className="recipe-tags" style={{display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px'}}>
+                        {recipe.tags.map((tag, index) => (
+                          <span key={index} className="recipe-tag" style={{
+                            background: '#f8f9fa',
+                            padding: '5px 12px',
+                            borderRadius: '20px',
+                            fontSize: '12px',
+                            color: '#555'
+                          }}>
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                    <a href="#" className="recipe-btn" style={{
-                      background: '#eece38',
-                      color: '#000',
-                      border: 'none',
-                      padding: '10px 25px',
-                      borderRadius: '5px',
-                      fontWeight: 600,
-                      transition: 'all 0.3s ease',
-                      textDecoration: 'none',
-                      display: 'inline-block'
-                    }}>View Recipe</a>
+                    <div className="recipe-btn-container" style={{marginTop: 'auto'}}>
+                      <a href="#" className="recipe-btn" style={{
+                        background: '#eece38',
+                        color: '#000',
+                        border: 'none',
+                        padding: '10px 25px',
+                        borderRadius: '5px',
+                        fontWeight: 600,
+                        transition: 'all 0.3s ease',
+                        textDecoration: 'none',
+                        display: 'inline-block',
+                        width: '100%',
+                        textAlign: 'center'
+                      }}>View Recipe</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -590,8 +605,8 @@ export default function Recipes() {
       {/* Health Benefits Section */}
       <section className="health-benefits" style={{background: '#f8f9fa', padding: '80px 0'}}>
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
+          <div className="row"> 
+            <div className="col-lg-12 text-center">
               <div className="section-title">
                 <span className="sub-title">Health Benefits</span>
                 <h2>Why Our Oils Are Good for You</h2>
