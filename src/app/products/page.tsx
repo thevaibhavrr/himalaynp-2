@@ -8,6 +8,8 @@ export default function Products() {
   const [activeFilter, setActiveFilter] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
   const [productCount, setProductCount] = useState(16)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null)
 
   // Product data
   const products = [
@@ -243,6 +245,16 @@ export default function Products() {
     setSearchTerm('')
   }
 
+  const openModal = (product: typeof products[0]) => {
+    setSelectedProduct(product)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedProduct(null)
+  }
+
   return (
     <>
       <Header />
@@ -424,7 +436,24 @@ export default function Products() {
                         <div className="product-size" style={{color: '#666', fontSize: '14px'}}>{product.size}</div>
                       </div>
                     </div>
-                    <a href="/contact" className="product-btn" style={{background: '#eece38', color: '#000', border: 'none', padding: '12px 30px', borderRadius: '5px', fontWeight: 600, transition: 'all 0.3s ease', width: '100%', textDecoration: 'none', display: 'block', textAlign: 'center', marginTop: 'auto'}}>Inquire Now</a>
+                    <button 
+                      onClick={() => openModal(product)} 
+                      className="product-btn" 
+                      style={{
+                        background: '#eece38', 
+                        color: '#000', 
+                        border: 'none', 
+                        padding: '12px 30px', 
+                        borderRadius: '5px', 
+                        fontWeight: 600, 
+                        transition: 'all 0.3s ease', 
+                        width: '100%', 
+                        cursor: 'pointer', 
+                        marginTop: 'auto'
+                      }}
+                    >
+                      Inquire Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -613,6 +642,378 @@ export default function Products() {
           </div>
         </div>
       </section>
+
+      {/* Product Inquiry Modal */}
+      {isModalOpen && selectedProduct && (
+        <div 
+          className="modal-overlay" 
+          onClick={closeModal}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '20px',
+            backdropFilter: 'blur(5px)'
+          }}
+        >
+          <div 
+            className="modal-content" 
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              backgroundColor: 'white',
+              borderRadius: '20px',
+              maxWidth: '900px',
+              width: '100%',
+              maxHeight: '95vh',
+              overflowY: 'auto',
+              boxShadow: '0 25px 50px rgba(0, 0, 0, 0.4)',
+              position: 'relative',
+              border: '1px solid rgba(238, 206, 56, 0.2)'
+            }}
+          >
+            {/* Close Button */}
+            <button 
+              onClick={closeModal}
+              style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                background: 'rgba(255, 255, 255, 0.9)',
+                border: 'none',
+                width: '40px',
+                height: '40px',
+                borderRadius: '50%',
+                fontSize: '20px',
+                cursor: 'pointer',
+                color: '#666',
+                zIndex: 10,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = '#eece38'
+                e.currentTarget.style.color = '#000'
+                e.currentTarget.style.transform = 'scale(1.1)'
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.9)'
+                e.currentTarget.style.color = '#666'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              ×
+            </button>
+
+         
+
+            <div style={{padding: '0'}}>
+              {/* Product Details Section */}
+              <div style={{
+                padding: '40px',
+                background: 'white'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  gap: '40px',
+                  alignItems: 'flex-start',
+                  marginBottom: '30px'
+                }}>
+                  {/* Product Image */}
+                  <div style={{
+                    flex: '0 0 250px',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+                      padding: '20px',
+                      borderRadius: '15px',
+                      border: '2px solid #eece38',
+                      position: 'relative',
+                      overflow: 'hidden'
+                    }}>
+                      <div style={{
+                        position: 'absolute',
+                        top: '10px',
+                        right: '10px',
+                        background: '#eece38',
+                        color: '#000',
+                        padding: '5px 12px',
+                        borderRadius: '15px',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                        zIndex: 2
+                      }}>
+                        {selectedProduct.badge}
+                      </div>
+                      <img 
+                        src={selectedProduct.image} 
+                        alt={selectedProduct.name}
+                        style={{
+                          width: '100%',
+                          height: '200px',
+                          objectFit: 'contain',
+                          borderRadius: '10px',
+                          transition: 'transform 0.3s ease'
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.transform = 'scale(1.05)'
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.transform = 'scale(1)'
+                        }}
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Product Info */}
+                  <div style={{flex: 1}}>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '15px',
+                      marginBottom: '20px'
+                    }}>
+                      <span style={{
+                        background: 'linear-gradient(135deg, #eece38 0%, #d4b82a 100%)',
+                        color: '#000',
+                        padding: '8px 20px',
+                        borderRadius: '25px',
+                        fontSize: '14px',
+                        fontWeight: 600,
+                        boxShadow: '0 2px 8px rgba(238, 206, 56, 0.3)'
+                      }}>
+                        {selectedProduct.badge}
+                      </span>
+                      <span style={{
+                        color: '#666',
+                        fontSize: '14px',
+                        background: '#f8f9fa',
+                        padding: '8px 15px',
+                        borderRadius: '20px',
+                        textTransform: 'capitalize'
+                      }}>
+                        {selectedProduct.category} Oil
+                      </span>
+                    </div>
+                    
+                    <h3 style={{
+                      fontSize: '28px',
+                      fontWeight: 700,
+                      marginBottom: '15px',
+                      color: '#333',
+                      lineHeight: 1.2
+                    }}>
+                      {selectedProduct.name}
+                    </h3>
+                    
+                    <p style={{
+                      color: '#666',
+                      lineHeight: 1.6,
+                      marginBottom: '25px',
+                      fontSize: '16px'
+                    }}>
+                      {selectedProduct.description}
+                    </p>
+                    
+                    <div style={{
+                      display: 'flex',
+                      gap: '30px',
+                      alignItems: 'center',
+                      marginBottom: '25px',
+                      padding: '20px',
+                      background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+                      borderRadius: '12px',
+                      border: '1px solid #dee2e6'
+                    }}>
+                      <div>
+                        <div style={{
+                          fontSize: '28px',
+                          fontWeight: 700,
+                          color: '#333',
+                          marginBottom: '5px'
+                        }}>
+                          {selectedProduct.price}
+                        </div>
+                        <div style={{
+                          color: '#666',
+                          fontSize: '14px',
+                          textTransform: 'uppercase',
+                          letterSpacing: '1px'
+                        }}>
+                          {selectedProduct.size}
+                        </div>
+                      </div>
+                      <div style={{
+                        width: '2px',
+                        height: '40px',
+                        background: '#eece38',
+                        borderRadius: '1px'
+                      }}></div>
+                      <div style={{
+                        color: '#666',
+                        fontSize: '16px',
+                        fontWeight: 500
+                      }}>
+                        Premium Quality
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h4 style={{
+                        fontSize: '20px',
+                        fontWeight: 600,
+                        marginBottom: '15px',
+                        color: '#333',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '10px'
+                      }}>
+                        <i className="fas fa-star" style={{color: '#eece38'}}></i>
+                        Key Features
+                      </h4>
+                      <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                        gap: '10px'
+                      }}>
+                        {selectedProduct.features.map((feature: string, index: number) => (
+                          <div key={index} style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            padding: '10px 15px',
+                            background: 'white',
+                            borderRadius: '8px',
+                            border: '1px solid #e9ecef',
+                            transition: 'all 0.3s ease'
+                          }}
+                          onMouseOver={(e) => {
+                            e.currentTarget.style.borderColor = '#eece38'
+                            e.currentTarget.style.transform = 'translateY(-2px)'
+                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(238, 206, 56, 0.2)'
+                          }}
+                          onMouseOut={(e) => {
+                            e.currentTarget.style.borderColor = '#e9ecef'
+                            e.currentTarget.style.transform = 'translateY(0)'
+                            e.currentTarget.style.boxShadow = 'none'
+                          }}
+                          >
+                            <i className="fas fa-check-circle" style={{
+                              color: '#28a745',
+                              marginRight: '12px',
+                              fontSize: '16px'
+                            }}></i>
+                            <span style={{color: '#333', fontSize: '14px', fontWeight: 500}}>
+                              {feature}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Section */}
+              <div style={{
+                background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+                padding: '40px',
+                borderRadius: '0 0 20px 20px',
+                borderTop: '1px solid #dee2e6'
+              }}>
+            
+
+                <div style={{
+                  display: 'flex',
+                  gap: '20px',
+                  justifyContent: 'center',
+                  flexWrap: 'wrap',
+                  marginBottom: '30px'
+                }}>
+                  <a 
+                    href="/contact" 
+                    style={{
+                      background: 'linear-gradient(135deg, #eece38 0%, #d4b82a 100%)',
+                      color: '#000',
+                      padding: '18px 35px',
+                      borderRadius: '12px',
+                      textDecoration: 'none',
+                      fontWeight: 600,
+                      fontSize: '16px',
+                      transition: 'all 0.3s ease',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      minWidth: '180px',
+                      justifyContent: 'center',
+                      boxShadow: '0 4px 15px rgba(238, 206, 56, 0.3)',
+                      border: '2px solid transparent'
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-3px)'
+                      e.currentTarget.style.boxShadow = '0 8px 25px rgba(238, 206, 56, 0.4)'
+                      e.currentTarget.style.borderColor = '#d4b82a'
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)'
+                      e.currentTarget.style.boxShadow = '0 4px 15px rgba(238, 206, 56, 0.3)'
+                      e.currentTarget.style.borderColor = 'transparent'
+                    }}
+                  >
+                    <i className="fas fa-envelope"></i>
+                    Contact Us
+                  </a>
+                  
+                  <a 
+                    href={`tel:+919219450111`}
+                    style={{
+                      background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                      color: 'white',
+                      padding: '18px 35px',
+                      borderRadius: '12px',
+                      textDecoration: 'none',
+                      fontWeight: 600,
+                      fontSize: '16px',
+                      transition: 'all 0.3s ease',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      minWidth: '180px',
+                      justifyContent: 'center',
+                      boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)',
+                      border: '2px solid transparent'
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-3px)'
+                      e.currentTarget.style.boxShadow = '0 8px 25px rgba(40, 167, 69, 0.4)'
+                      e.currentTarget.style.borderColor = '#20c997'
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)'
+                      e.currentTarget.style.boxShadow = '0 4px 15px rgba(40, 167, 69, 0.3)'
+                      e.currentTarget.style.borderColor = 'transparent'
+                    }}
+                  >
+                    <i className="fas fa-phone"></i>
+                    Call Now
+                  </a>
+                </div>
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </>

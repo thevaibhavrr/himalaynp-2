@@ -1180,3 +1180,117 @@ x
     right: 15px;
   }
 }
+
+/* Product Inquiry Modal Styles */
+.modal-overlay {
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile Responsive Modal */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95% !important;
+    margin: 10px !important;
+    max-height: 95vh !important;
+    border-radius: 15px !important;
+  }
+  
+  /* Header adjustments */
+  .modal-content > div > div:first-child {
+    padding: 20px !important;
+    border-radius: 15px 15px 0 0 !important;
+  }
+  
+  .modal-content > div > div:first-child h2 {
+    font-size: 24px !important;
+  }
+  
+  .modal-content > div > div:first-child p {
+    font-size: 14px !important;
+  }
+  
+  /* Product details section */
+  .modal-content > div > div:nth-child(2) {
+    padding: 20px !important;
+  }
+  
+  .modal-content > div > div:nth-child(2) > div {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  .modal-content > div > div:nth-child(2) > div > div:first-child {
+    flex: none !important;
+    width: 100% !important;
+  }
+  
+  .modal-content > div > div:nth-child(2) > div > div:first-child img {
+    height: 150px !important;
+  }
+  
+  /* Contact section */
+  .modal-content > div > div:last-child {
+    padding: 20px !important;
+    border-radius: 0 0 15px 15px !important;
+  }
+  
+  .modal-content > div > div:last-child h3 {
+    font-size: 22px !important;
+  }
+  
+  .modal-content > div > div:last-child > div:nth-child(2) {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+  
+  .modal-content > div > div:last-child > div:nth-child(2) a {
+    min-width: auto !important;
+    width: 100% !important;
+    padding: 15px 25px !important;
+  }
+  
+  /* Contact info cards */
+  .modal-content > div > div:last-child > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  
+  .modal-content > div > div:last-child > div:last-child > div {
+    padding: 20px !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .modal-content {
+    max-width: 90% !important;
+  }
+  
+  .modal-content > div > div:nth-child(2) > div {
+    gap: 30px !important;
+  }
+  
+  .modal-content > div > div:nth-child(2) > div > div:first-child {
+    flex: 0 0 200px !important;
+  }
+}
