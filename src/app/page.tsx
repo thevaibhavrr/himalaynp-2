@@ -44,7 +44,7 @@ export default function Home() {
         
         // Initialize the slider
         window.$('.hero-slider-one').slick({
-          dots: false,
+          dots: true,
           arrows: true,
           infinite: true,
           speed: 400,
@@ -60,11 +60,14 @@ export default function Home() {
             {
               breakpoint: 767,
               settings: {
-                arrows: false
+                arrows: false,
+                dots: true
               }
             }
           ]
         })
+        
+        console.log('Hero slider initialized successfully')
       } else {
         // Fallback: If jQuery/Slick is not available, show first slide
         console.log('Slider initialization failed, showing first slide as fallback')
@@ -82,12 +85,28 @@ export default function Home() {
     }
 
     // Try multiple times to initialize slider
+    let retryCount = 0
+    const maxRetries = 10
+    
     const tryInitialize = () => {
       if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
         initializeSlider()
-      } else {
+      } else if (retryCount < maxRetries) {
+        retryCount++
         // Retry after 200ms
         setTimeout(tryInitialize, 200)
+      } else {
+        console.log('Max retries reached, using fallback')
+        const slides = document.querySelectorAll('.single-slider')
+        if (slides.length > 0) {
+          slides.forEach((slide, index) => {
+            if (index === 0) {
+              (slide as HTMLElement).style.display = 'block'
+            } else {
+              (slide as HTMLElement).style.display = 'none'
+            }
+          })
+        }
       }
     }
 
@@ -117,28 +136,12 @@ export default function Home() {
         <div className="hero-slider-one">
           <div className="single-slider homa_page_banner">
             <div className="image-layer bg_cover" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}></div>
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-10">
-                  <div className="hero-content text-center">
-                    <span className="tag-line" data-animation="fadeInDown" data-delay=".4s"></span>
-                    <h1 data-animation="fadeInUp" data-delay=".5s"></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
           </div>
           <div className="single-slider homa_page_banner">
             <div className="image-layer bg_cover" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/9b6f3b58-0e49-41b3-b041-2a95c525b2b9.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}></div>
             <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-10">
-                  <div className="hero-content text-center">
-                    <span className="tag-line" data-animation="fadeInDown" data-delay=".4s"></span>
-                    <h1 data-animation="fadeInUp" data-delay=".5s"></h1>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
           <div className="single-slider homa_page_banner">
@@ -146,21 +149,11 @@ export default function Home() {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-lg-10">
-                  <div className="hero-content text-center">
-                    <span className="tag-line" data-animation="fadeInDown" data-delay=".4s"></span>
-                    <h1 data-animation="fadeInUp" data-delay=".5s"></h1>
-                  </div>
+                 
                 </div>
               </div>
             </div>
           </div>
-          {/* Navigation Arrows */}
-          <button className="slick-arrow prev" type="button">
-            <i className="fas fa-chevron-left"></i>
-          </button>
-          <button className="slick-arrow next" type="button">
-            <i className="fas fa-chevron-right"></i>
-          </button>
         </div>
       </section>
 
@@ -180,7 +173,7 @@ export default function Home() {
           </div>
           <div className="row mb-100">
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70 wow fadeInUp">
+              <div className="service-box text-center mb-70">
                 <div className="icon">
                   <i className="fas fa-seedling"></i>
                 </div>
@@ -190,7 +183,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70 wow fadeInDown">
+              <div className="service-box text-center mb-70">
                 <div className="icon">
                   <i className="fas fa-heart"></i>
                 </div>
@@ -200,7 +193,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70 wow fadeInUp">
+              <div className="service-box text-center mb-70">
                 <div className="icon">
                   <i className="fas fa-sun"></i>
                 </div>
@@ -210,7 +203,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70 wow fadeInDown">
+              <div className="service-box text-center mb-70">
                 <div className="icon">
                   <i className="fas fa-seedling"></i>
                 </div>
@@ -220,7 +213,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70 wow fadeInUp">
+              <div className="service-box text-center mb-70">
                 <div className="icon">
                   <i className="fas fa-balance-scale"></i>
                 </div>
@@ -230,7 +223,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70 wow fadeInDown">
+              <div className="service-box text-center mb-70">
                 <div className="icon">
                   <i className="fas fa-boxes"></i>
                 </div>

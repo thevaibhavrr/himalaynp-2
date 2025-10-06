@@ -13,14 +13,14 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-            <div className="testimonial-item text-center wow fadeInDown">
+        <div className="row" style={{display: 'flex', flexWrap: 'wrap'}}>
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-30" style={{display: 'flex'}}>
+            <div className="testimonial-item text-center wow fadeInDown" style={{display: 'flex', flexDirection: 'column', width: '100%', height: '100%'}}>
               <div className="author-thumb">
                 <Image src="https://img.freepik.com/free-photo/young-handsome-man-wearing-casual-tshirt-blue-background-happy-face-smiling-with-crossed-arms-looking-camera-positive-person_839833-12963.jpg?semt=ais_hybrid&w=740&q=80" alt="Customer Image" width={80} height={80} style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
-              <div className="testimonial-content">
-                <p>&quot;The purity of Bharat Agro&apos;s mustard oil is unmatched. Traditional taste with modern packaging.   </p>
+              <div className="testimonial-content" style={{flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                <p>&quot;The purity of Bharat Agro&apos;s mustard oil is unmatched. Traditional taste with modern packaging.&quot;</p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Rajesh Kumar</h4>
@@ -29,13 +29,13 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-            <div className="testimonial-item text-center wow fadeInUp">
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-30" style={{display: 'flex'}}>
+            <div className="testimonial-item text-center wow fadeInUp" style={{display: 'flex', flexDirection: 'column', width: '100%', height: '100%'}}>
               <div className="author-thumb">
                 <img src="https://img.freepik.com/premium-photo/shouting-triumphantly-laughing-feeling-happy-excited-while-celebrating-success_1194-493374.jpg?semt=ais_incoming&w=740&q=80" alt="Customer Image" style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
-              <div className="testimonial-content">
-                <p>&quot;As a distributor, I appreciate their consistent quality and reliable supply. The products are always fresh and well-packaged.&quot; </p>
+              <div className="testimonial-content" style={{flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                <p>&quot;As a distributor, I appreciate their consistent quality and reliable supply. The products are always fresh and well-packaged.&quot;</p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Sanjay Verma</h4>
@@ -44,13 +44,13 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-            <div className="testimonial-item text-center wow fadeInDown">
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-30" style={{display: 'flex'}}>
+            <div className="testimonial-item text-center wow fadeInDown" style={{display: 'flex', flexDirection: 'column', width: '100%', height: '100%'}}>
               <div className="author-thumb">
                 <img src="https://img.freepik.com/premium-photo/hispanic-young-man-standing-blue-background-smiling-with-open-mouth-fingers-pointing-forcing-cheerful-smile_839833-7529.jpg?semt=ais_hybrid&w=740&q=80" alt="Customer Image" style={{width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
-              <div className="testimonial-content">
-                <p>&quot;The sunflower oil is light and perfect for daily cooking. Love that it&apos;s naturally filtered without chemical processing.&quot; </p>
+              <div className="testimonial-content" style={{flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                <p>&quot;The sunflower oil is light and perfect for daily cooking. Love that it&apos;s naturally filtered without chemical processing.&quot;</p>
                 <div className="quote"><i className="fas fa-quote-right"></i></div>
                 <div className="author-title">
                   <h4>Priya Sharma</h4>
