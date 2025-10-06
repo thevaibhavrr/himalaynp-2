@@ -236,6 +236,79 @@ p {
   text-align: center !important;
 }
 
+/* About Section Alignment Fixes */
+.about-one_content-box {
+  text-align: center;
+}
+
+.about-one_content-box .quote-text {
+  text-align: center;
+}
+
+.about-one_content-box .tab-content-box {
+  text-align: center;
+}
+
+.about-one_content-box .nav-tabs {
+  justify-content: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.about-one_content-box .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #495057;
+  background-color: transparent;
+}
+
+.about-one_content-box .nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
+  isolation: isolate;
+}
+
+.about-one_content-box .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.about-one_image-box {
+  text-align: center;
+}
+
+.about-one_image-box .about-img_one,
+.about-one_image-box .about-img_two {
+  display: inline-block;
+  margin: 0 auto 20px auto;
+}
+
+/* Features Section Icon and Heading Alignment */
+.features-item .text h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.features-item .text h4 i {
+  font-size: 1.2em;
+  color: #eece38;
+}
+
+.features-item .text h4 i.fas.fa-rocket {
+  color: #eece38;
+}
+
+.features-item .text h4 i.fas.fa-globe {
+  color: #eece38;
+}
+
+.features-item .text h4 i.fas.fa-star {
+  color: #eece38;
+}
+
 /* Responsive font sizes */
 @media (max-width: 768px) {
   h1 {

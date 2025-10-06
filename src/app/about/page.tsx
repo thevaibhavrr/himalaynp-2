@@ -93,33 +93,33 @@ export default function About() {
           <div className="row">
             <div className="col-lg-4 col-md-6">
               <div className="features-item text-center mb-30 wow fadeInUp">
-                <div className="icon">
-                  <i className="fas fa-bullseye"></i>
-                </div>
                 <div className="text">
-                  <h4 className="text-warning">Our Mission</h4>
+                  <h4 className="text-warning d-flex align-items-center justify-content-center">
+                    <i className="fas fa-rocket me-3"></i>
+                    Our Mission
+                  </h4>
                   <p>To produce and deliver superior-quality edible oils that meet the highest standards of purity, health, and safety. We aim to delight customers through excellent packaging, reliable service, and consistent commitment to their nutritional needs.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="features-item text-center mb-30 wow fadeInDown">
-                <div className="icon">
-                  <i className="fas fa-eye"></i>
-                </div>
                 <div className="text">
-                  <h4 className="text-warning">Our Vision</h4>
+                  <h4 className="text-warning d-flex align-items-center justify-content-center">
+                    <i className="fas fa-globe me-3"></i>
+                    Our Vision
+                  </h4>
                   <p>To be a leading edible oil brand recognized globally for quality, trust, and innovation. We aspire to set new benchmarks in customer satisfaction and health-focused products while continuously enhancing our processes, packaging, and services.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="features-item text-center mb-30 wow fadeInUp">
-                <div className="icon">
-                  <i className="fas fa-heart"></i>
-                </div>
                 <div className="text">
-                  <h4 className="text-warning">Our Values</h4>
+                  <h4 className="text-warning d-flex align-items-center justify-content-center">
+                    <i className="fas fa-star me-3"></i>
+                    Our Values
+                  </h4>
                   <p>Quality, Purity, Trust, and Innovation. We believe in maintaining traditional values while embracing modern technology to deliver the best products to our customers. Every decision we make is guided by our commitment to health and wellness.</p>
                 </div>
               </div>
@@ -816,7 +816,7 @@ export default function About() {
       <section className="farmers-team_two light-gray-bg pb-90 pt-80">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12 text-center">
               <div className="section-title section-title-left mb-50 wow fadeInLeft">
                 <span className="sub-title">Our Expertise</span>
                 <h2>Dedicated Team Ensuring Quality</h2>
