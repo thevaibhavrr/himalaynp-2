@@ -5,7 +5,7 @@ const AboutSection = () => {
     <section className="about-one pt-130 pb-100 p-r z-1">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-xl-5 col-lg-6">
+          <div className="col-xl-6 col-lg-6">
             <div className="about-one_content-box mb-50">
               <div className="section-title text-center mb-30">
                 <span className="sub-title">About Us</span>
@@ -38,7 +38,7 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-7 col-lg-6">
+          <div className="col-xl-6 col-lg-6">
             <div className="about-one_image-box p-r mb-50 pl-100">
               <div className="about-img_one" style={{maxWidth: '250px', height: 'auto', borderRadius: '10px'}}>
                 <img src="https://m.media-amazon.com/images/I/81Q5EIg1a5L._UF350,350_QL80_.jpg" alt="Mustard Oil" style={{width: '100%', height: 'auto', borderRadius: '10px'}} />
