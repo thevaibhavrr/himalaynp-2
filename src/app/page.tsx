@@ -387,7 +387,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className="offer-one_content-box content-box-gap mb-20">
-                <div className="section-title section-title-left mb-20 wow fadeInUp">
+                <div className="section-title text-center mb-20 wow fadeInUp">
                   <span className="sub-title">Our Capabilities</span>
                   <h2>State-of-the-Art Manufacturing Facility</h2>
                 </div>
@@ -432,7 +432,7 @@ export default function Home() {
           <div className="col-lg-6">
             <div className="contact-one_content-box wow fadeInLeft">
               <div className="contact-wrapper">
-                <div className="section-title section-title-left mb-40">
+                <div className="section-title text-center mb-40">
                   <span className="sub-title">Get In Touch</span>
                   <h2>Interested in Our Products? Become a Distributor Today!</h2>
                 </div>
@@ -569,7 +569,7 @@ export default function Home() {
         <div className="container">
           <div className="row align-items-end">
             <div className="col-xl-7 col-lg-10">
-              <div className="section-title section-title-left mb-60 wow fadeInLeft">
+              <div className="section-title text-center mb-60 wow fadeInLeft">
                 <span className="sub-title">Health & Recipes</span>
                 <h2>Latest Health Tips & Recipes With Our Oils</h2>
               </div>

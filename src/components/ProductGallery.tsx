@@ -5,8 +5,8 @@ const ProductGallery = () => {
   return (
     <section className="projects-section pt-130 pb-95 p-r z-1">
       <div className="container">
-        <div className="row align-items-end">
-          <div className="col-lg-8 col-md-9">
+        <div className="row align-items-end text-center">
+          <div className="col-lg-12 col-md-9">
             <div className="section-title section-title-left mb-60 wow fadeInLeft">
               <span className="sub-title">Product Gallery</span>
               <h2>Explore Our Premium Range of Edible Oils</h2>

@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="row align-items-center">
           <div className="col-xl-5 col-lg-6">
             <div className="about-one_content-box mb-50">
-              <div className="section-title section-title-left mb-30">
+              <div className="section-title text-center mb-30">
                 <span className="sub-title">About Us</span>
                 <h2>Trusted Name in Edible Oil Industry Since 1978</h2>
               </div>

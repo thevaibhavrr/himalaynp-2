@@ -129,6 +129,113 @@ h6 {
   padding: 10px 0;
 }
 
+/* Center all headings and titles on home page */
+.section-title {
+  text-align: center !important;
+}
+
+.section-title h2 {
+  text-align: center !important;
+}
+
+.section-title .sub-title {
+  text-align: center !important;
+}
+
+/* Override left-aligned section titles */
+.section-title-left {
+  text-align: center !important;
+}
+
+.section-title-left h2 {
+  text-align: center !important;
+}
+
+.section-title-left .sub-title {
+  text-align: center !important;
+}
+
+/* Center all h1, h2, h3, h4, h5, h6 on home page */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center !important;
+}
+
+/* Center specific section headings */
+.big-text h2 {
+  text-align: center !important;
+}
+
+.counter-inner .text h2 {
+  text-align: center !important;
+}
+
+.counter-inner .text p {
+  text-align: center !important;
+}
+
+/* Center service item headings */
+.single-service-item h3 {
+  text-align: center !important;
+}
+
+.single-service-item p {
+  text-align: center !important;
+}
+
+/* Center chart item headings */
+.single-chart-item .text h5 {
+  text-align: center !important;
+}
+
+/* Center blog post titles */
+.blog-post-item-one .title {
+  text-align: center !important;
+}
+
+.blog-post-item-one .entry-content {
+  text-align: center !important;
+}
+
+/* Center contact section headings */
+.contact-one_content-box .section-title {
+  text-align: center !important;
+}
+
+.contact-one_content-box .section-title h2 {
+  text-align: center !important;
+}
+
+.contact-one_content-box .section-title .sub-title {
+  text-align: center !important;
+}
+
+/* Center manufacturing facility section */
+.offer-one_content-box .section-title {
+  text-align: center !important;
+}
+
+.offer-one_content-box .section-title h2 {
+  text-align: center !important;
+}
+
+.offer-one_content-box .section-title .sub-title {
+  text-align: center !important;
+}
+
+/* Center all paragraphs in sections */
+p {
+  text-align: center !important;
+}
+
+/* Center service box content */
+.service-box .text {
+  text-align: center !important;
+}
+
+.service-box .text .title {
+  text-align: center !important;
+}
+
 /* Responsive font sizes */
 @media (max-width: 768px) {
   h1 {
