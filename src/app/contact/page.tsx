@@ -39,7 +39,7 @@ export default function Contact() {
                 <div className="row">
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="information-item-two info-one mb-30 wow fadeInDown" style={{background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 5px 20px rgba(0,0,0,0.1)', borderLeft: '4px solid #eece38', height: '100%', display: 'flex', flexDirection: 'column'}}>
-                      <div className="icon" style={{color: '#eece38', fontSize: '24px', marginBottom: '15px', textAlign: 'center'}}>
+                      <div className="icon" style={{color: '#eece38',background: 'white', border: "1px solid #eece38" ,fontSize: '24px', marginBottom: '15px', textAlign: 'center'}}>
                         <i className="far fa-map-marker-alt"></i>
                       </div>
                       <div className="info" style={{textAlign: 'center', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
@@ -50,7 +50,7 @@ export default function Contact() {
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="information-item-two mb-30 info-two wow fadeInUp" style={{background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 5px 20px rgba(0,0,0,0.1)', borderLeft: '4px solid #eece38', height: '100%', display: 'flex', flexDirection: 'column'}}>
-                      <div className="icon" style={{color: '#eece38', fontSize: '24px', marginBottom: '15px', textAlign: 'center'}}>
+                      <div className="icon" style={{color: '#eece38', fontSize: '24px', marginBottom: '15px', textAlign: 'center' , background: 'white', border: "1px solid #eece38" ,}}>
                         <i className="far fa-envelope-open-text"></i>
                       </div>
                       <div className="info" style={{textAlign: 'center', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', wordWrap: 'break-word', overflowWrap: 'break-word'}}>
@@ -62,7 +62,7 @@ export default function Contact() {
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="information-item-two mb-30 info-three wow fadeInDown" style={{background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 5px 20px rgba(0,0,0,0.1)', borderLeft: '4px solid #eece38', height: '100%', display: 'flex', flexDirection: 'column'}}>
-                      <div className="icon" style={{color: '#eece38', fontSize: '24px', marginBottom: '15px', textAlign: 'center'}}>
+                      <div className="icon" style={{color: '#eece38', fontSize: '24px', marginBottom: '15px', textAlign: 'center',background: 'white', border: "1px solid #eece38" ,}}>
                         <i className="far fa-phone"></i>
                       </div>
                       <div className="info" style={{textAlign: 'center', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', wordWrap: 'break-word', overflowWrap: 'break-word'}}>
