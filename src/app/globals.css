@@ -334,6 +334,89 @@ p {
   color: #eece38;
 }
 
+/* Override text-center for Why Choose Us section */
+.choose-item-list {
+  text-align: left !important;
+}
+
+.choose-item-list .single-choose-item {
+  text-align: left !important;
+}
+
+.choose-item-list .single-choose-item .text {
+  text-align: left !important;
+}
+
+.choose-item-list .single-choose-item .text h5 {
+  text-align: left !important;
+}
+
+.choose-item-list .single-choose-item .text p {
+  text-align: left !important;
+}
+
+/* Center facility features section */
+.facility-features .feature-card {
+  text-align: center !important;
+}
+
+.facility-features .feature-icon {
+  text-align: center !important;
+  display: block !important;
+}
+
+.facility-features .feature-content {
+  text-align: center !important;
+}
+
+.facility-features .feature-content h5 {
+  text-align: center !important;
+}
+
+.facility-features .feature-content p {
+  text-align: center !important;
+}
+
+/* Center footer content */
+.footer-widget {
+  text-align: center !important;
+}
+
+.footer-widget .widget-title {
+  text-align: center !important;
+}
+
+.footer-widget .distribution-areas {
+  text-align: center !important;
+}
+
+.footer-widget .distribution-areas h5 {
+  text-align: center !important;
+}
+
+.footer-widget .distribution-areas ul {
+  text-align: center !important;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-widget .distribution-areas ul li {
+  text-align: center !important;
+  margin-bottom: 8px;
+}
+
+.footer-widget .certification {
+  text-align: center !important;
+}
+
+.footer-widget .certification h5 {
+  text-align: center !important;
+}
+
+.footer-widget .certification p {
+  text-align: center !important;
+}
+
 /* Responsive font sizes */
 @media (max-width: 768px) {
   h1 {

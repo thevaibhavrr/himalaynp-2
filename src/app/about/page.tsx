@@ -38,9 +38,9 @@ export default function About() {
                 </div>
                 <p>For over four decades, Bharat Agro Oil has been a pioneer in the edible oil industry, dedicated to delivering purity, quality, and health in every drop. We are committed to providing premium quality, pure, and healthy edible oils to Indian families through our traditional extraction methods combined with modern technology.</p>
 
-                <div className="choose-item-list wow fadeInDown">
+                <div className="choose-item-list wow fadeInDown ">
                   <div className="single-choose-item mb-30">
-                    <div className="text">
+                    <div className="text ">
                       <h5>Traditional Kolhu Extraction</h5>
                       <p>Using traditional methods combined with modern technology to ensure maximum purity and nutritional value.</p>
                     </div>
