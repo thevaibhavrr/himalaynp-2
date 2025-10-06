@@ -2,6 +2,8 @@
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import PartnersSection from '@/components/PartnersSection'
+
 
 export default function Services() {
   // Service data
@@ -401,28 +403,8 @@ export default function Services() {
       </section>
 
       {/* Partners Section */}
-      <section className="partners-section mb-10">
-        <div className="container-1350">
-          <div className="partners-wrap-three yellow-bg pb-60 pt-50 p-r z-1">
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <div className="section-title text-center mb-30 wow fadeInUp">
-                  <h4>Available On Leading Platforms & Distribution Networks</h4>
-                </div>
-              </div>
-            </div>
-            <div className="partner-slider-one wow fadeInDown">
-              {partners.map(partner => (
-                <div key={partner.id} className="partner-item">
-                  <div className="partner-img">
-                    <img src={partner.image} alt={partner.name} style={{maxHeight: '60px', width: 'auto', filter: 'grayscale(0%)', transition: 'all 0.3s ease'}} />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+       <PartnersSection/>
+    
       
 
       {/* CTA Section */}
