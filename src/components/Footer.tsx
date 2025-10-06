@@ -28,7 +28,7 @@ export default function Footer() {
                   </div>
                   <div className="text">
                     <h5>Our Factory</h5>
-                    <h6>Modinagar, Ghaziabad, UP</h6>
+                    <h6 style={{whiteSpace: 'nowrap'}}>Modinagar, Ghaziabad, UP</h6>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                   <div className="footer-widget-nav">
                     <ul>
                       <li><Link href="/mustard-oil">Mustard Oil</Link></li>
-                      
+
                       <li><Link href="/soybean-oil">Soybean Oil</Link></li>
                       <li><Link href="/sunflower-oil">Sunflower Oil</Link></li>
                       <li><Link href="/groundnut-oil">Groundnut Oil</Link></li>
