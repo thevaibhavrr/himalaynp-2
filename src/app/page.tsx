@@ -9,18 +9,41 @@ import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
 import { useEffect } from 'react'
 
+// Type declarations for jQuery and Slick
+interface JQuery {
+  slick: (options?: Record<string, unknown> | string) => JQuery;
+  hasClass: (className: string) => boolean;
+  fn: {
+    slick: Record<string, unknown>;
+  };
+}
+
+interface JQueryFunction {
+  (selector: string): JQuery;
+  fn: {
+    slick: Record<string, unknown>;
+  };
+}
+
+declare global {
+  interface Window {
+    $: JQueryFunction;
+    jQuery: JQueryFunction;
+  }
+}
+
 export default function Home() {
   useEffect(() => {
     // Initialize slider after component mounts
     const initializeSlider = () => {
-      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn.slick) {
+      if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
         // Destroy existing slider if it exists
-        if ((window as any).$('.hero-slider-one').hasClass('slick-initialized')) {
-          (window as any).$('.hero-slider-one').slick('unslick')
+        if (window.$('.hero-slider-one').hasClass('slick-initialized')) {
+          window.$('.hero-slider-one').slick('unslick')
         }
         
         // Initialize the slider
-        (window as any).$('.hero-slider-one').slick({
+        window.$('.hero-slider-one').slick({
           dots: false,
           arrows: true,
           infinite: true,
@@ -60,7 +83,7 @@ export default function Home() {
 
     // Try multiple times to initialize slider
     const tryInitialize = () => {
-      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn.slick) {
+      if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
         initializeSlider()
       } else {
         // Retry after 200ms
@@ -74,8 +97,8 @@ export default function Home() {
     return () => {
       clearTimeout(timer)
       // Cleanup slider on unmount
-      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$('.hero-slider-one').hasClass('slick-initialized')) {
-        (window as any).$('.hero-slider-one').slick('unslick')
+      if (typeof window !== 'undefined' && window.$ && window.$('.hero-slider-one').hasClass('slick-initialized')) {
+        window.$('.hero-slider-one').slick('unslick')
       }
     }
   }, [])
@@ -83,7 +106,7 @@ export default function Home() {
   // Add global jQuery type declaration
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      (window as any).$ = (window as any).jQuery
+      window.$ = window.jQuery
     }
   }, [])
   return (
