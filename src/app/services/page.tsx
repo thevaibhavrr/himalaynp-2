@@ -251,7 +251,7 @@ export default function Services() {
       </section>
 
       {/* Service Gallery Section */}
-      <section className="service-gallery-section p-r z-1 pt-130 pb-130">
+      <section className="service-gallery-section p-r z-1 pt-20 pb-130">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
