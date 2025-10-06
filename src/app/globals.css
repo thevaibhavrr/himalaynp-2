@@ -417,6 +417,127 @@ p {
   text-align: center !important;
 }
 
+/* Fix footer alignment issues */
+.footer-default {
+  text-align: center !important;
+}
+
+.footer-top {
+  text-align: center !important;
+}
+
+.footer-contact-item {
+  text-align: center !important;
+}
+
+.footer-contact-item .contact-info {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.footer-contact-item .contact-info .text {
+  text-align: center !important;
+}
+
+.footer-contact-item .contact-info .text h5 {
+  text-align: center !important;
+}
+
+.footer-contact-item .contact-info .text h6 {
+  text-align: center !important;
+}
+
+.footer-widget .about-widget {
+  text-align: left !important;
+}
+
+.footer-widget .about-widget .widget-title {
+  text-align: left !important;
+}
+
+.footer-widget .about-widget .footer-about-content {
+  text-align: left !important;
+}
+
+.footer-widget .about-widget .footer-about-content p {
+  text-align: left !important;
+}
+
+.footer-widget .about-widget .social-box {
+  text-align: left !important;
+}
+
+.footer-widget .about-widget .social-box h4 {
+  text-align: left !important;
+}
+
+.footer-widget .about-widget .social-link {
+  justify-content: flex-start !important;
+  display: flex !important;
+  list-style: none !important;
+  padding: 0 !important;
+  gap: 15px !important;
+}
+
+.footer-widget .footer-nav-widget {
+  text-align: center !important;
+}
+
+.footer-widget .footer-nav-widget .widget-title {
+  text-align: center !important;
+}
+
+.footer-widget .footer-nav-widget .footer-widget-nav {
+  text-align: center !important;
+}
+
+.footer-widget .footer-nav-widget .footer-widget-nav ul {
+  text-align: center !important;
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.footer-widget .footer-nav-widget .footer-widget-nav ul li {
+  text-align: center !important;
+  margin-bottom: 8px !important;
+}
+
+.footer-newsletter {
+  text-align: center !important;
+}
+
+.footer-newsletter .footer-text {
+  text-align: center !important;
+}
+
+.footer-newsletter .footer-text h5 {
+  text-align: center !important;
+}
+
+.footer-newsletter .newsletter-form {
+  text-align: center !important;
+}
+
+.footer-newsletter .newsletter-form .form_group {
+  text-align: center !important;
+}
+
+.footer-newsletter .newsletter-form .form_control {
+  text-align: center !important;
+}
+
+.footer-copyright {
+  text-align: center !important;
+}
+
+.footer-copyright .copyright-text {
+  text-align: center !important;
+}
+
+.footer-copyright .copyright-text p {
+  text-align: center !important;
+}
+
 /* Responsive font sizes */
 @media (max-width: 768px) {
   h1 {

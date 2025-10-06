@@ -70,6 +70,7 @@ export default function Footer() {
                   <div className="footer-widget-nav">
                     <ul>
                       <li><Link href="/mustard-oil">Mustard Oil</Link></li>
+                      
                       <li><Link href="/soybean-oil">Soybean Oil</Link></li>
                       <li><Link href="/sunflower-oil">Sunflower Oil</Link></li>
                       <li><Link href="/groundnut-oil">Groundnut Oil</Link></li>
