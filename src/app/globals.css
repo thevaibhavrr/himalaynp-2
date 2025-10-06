@@ -309,6 +309,31 @@ p {
   color: #eece38;
 }
 
+/* Health Benefits Section Icons */
+.benefit-card .benefit-icon i {
+  color: #eece38;
+  font-size: 40px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon i {
+  transform: scale(1.1);
+  color: #d4ac0d;
+}
+
+.benefit-card .benefit-icon i.fas.fa-heartbeat {
+  color: #eece38;
+}
+
+.benefit-card .benefit-icon i.fas.fa-shield-alt {
+  color: #eece38;
+}
+
+.benefit-card .benefit-icon i.fas.fa-leaf {
+  color: #eece38;
+}
+
 /* Responsive font sizes */
 @media (max-width: 768px) {
   h1 {

@@ -467,7 +467,7 @@ export default function Products() {
                 transition: 'transform 0.3s ease'
               }}>
                 <div className="benefit-icon" style={{fontSize: '40px', color: '#eece38', marginBottom: '20px'}}>
-                  <i className="flaticon-heart"></i>
+                  <i className="fas fa-heartbeat"></i>
                 </div>
                 <h4>Heart Healthy</h4>
                 <p>Our oils are rich in monounsaturated fats that support cardiovascular health and help maintain healthy cholesterol levels.</p>
@@ -484,7 +484,7 @@ export default function Products() {
                 transition: 'transform 0.3s ease'
               }}>
                 <div className="benefit-icon" style={{fontSize: '40px', color: '#eece38', marginBottom: '20px'}}>
-                  <i className="flaticon-immunity"></i>
+                  <i className="fas fa-shield-alt"></i>
                 </div>
                 <h4>Rich in Antioxidants</h4>
                 <p>Packed with natural antioxidants that help combat free radicals and support overall immune system function.</p>
@@ -501,7 +501,7 @@ export default function Products() {
                 transition: 'transform 0.3s ease'
               }}>
                 <div className="benefit-icon" style={{fontSize: '40px', color: '#eece38', marginBottom: '20px'}}>
-                  <i className="flaticon-digestion"></i>
+                  <i className="fas fa-leaf"></i>
                 </div>
                 <h4>Easy Digestion</h4>
                 <p>Light and easily digestible oils that don&apos;t burden your digestive system while providing essential nutrients.</p>
