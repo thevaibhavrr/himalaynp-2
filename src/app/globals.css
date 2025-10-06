@@ -339,7 +339,7 @@ x
 .service-box .icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #635c3f, #f4d03f);
+  background: linear-gradient(135deg, #d8bc4b, #f4d03f);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -384,9 +384,9 @@ x
   transition: color 0.3s ease;
 }
 
-.service-box .title a:hover {
+/* .service-box .title a:hover {
   color: #eece38;
-}
+} */
 
 .service-box p {
   color: #666;

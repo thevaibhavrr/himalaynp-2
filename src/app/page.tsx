@@ -13,14 +13,14 @@ export default function Home() {
   useEffect(() => {
     // Initialize slider after component mounts
     const initializeSlider = () => {
-      if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
+      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn.slick) {
         // Destroy existing slider if it exists
-        if (window.$('.hero-slider-one').hasClass('slick-initialized')) {
-          window.$('.hero-slider-one').slick('unslick')
+        if ((window as any).$('.hero-slider-one').hasClass('slick-initialized')) {
+          (window as any).$('.hero-slider-one').slick('unslick')
         }
         
         // Initialize the slider
-        window.$('.hero-slider-one').slick({
+        (window as any).$('.hero-slider-one').slick({
           dots: false,
           arrows: true,
           infinite: true,
@@ -60,7 +60,7 @@ export default function Home() {
 
     // Try multiple times to initialize slider
     const tryInitialize = () => {
-      if (typeof window !== 'undefined' && window.$ && window.$.fn.slick) {
+      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn.slick) {
         initializeSlider()
       } else {
         // Retry after 200ms
@@ -74,8 +74,8 @@ export default function Home() {
     return () => {
       clearTimeout(timer)
       // Cleanup slider on unmount
-      if (typeof window !== 'undefined' && window.$ && window.$('.hero-slider-one').hasClass('slick-initialized')) {
-        window.$('.hero-slider-one').slick('unslick')
+      if (typeof window !== 'undefined' && (window as any).$ && (window as any).$('.hero-slider-one').hasClass('slick-initialized')) {
+        (window as any).$('.hero-slider-one').slick('unslick')
       }
     }
   }, [])
@@ -145,7 +145,7 @@ export default function Home() {
       <AboutSection />
 
       {/* Services Section */}
-      <section className="service-one dark-black-bg p-130 pb-125 p-r z-1">
+      <section className="service-one dark-black-bg p-130 pb-25 p-r z-1 mb-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-10">
@@ -155,7 +155,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mb-100">
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
               <div className="service-box text-center mb-70 wow fadeInUp">
                 <div className="icon">
