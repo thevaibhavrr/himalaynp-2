@@ -177,62 +177,62 @@ export default function Home() {
           </div>
           <div className="row mb-100">
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70">
-                <div className="icon">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+                <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-seedling"></i>
                 </div>
                 <div className="text">
-                  <h3 className="title"><Link href="/products">Mustard Oil<br />Pure & Natural</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Mustard Oil<br />Pure & Natural</Link></h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70">
-                <div className="icon">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+                <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-heart"></i>
                 </div>
                 <div className="text">
-                  <h3 className="title"><Link href="/products">Soybean Oil<br />Heart Healthy</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Soybean Oil<br />Heart Healthy</Link></h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70">
-                <div className="icon">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+                <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-sun"></i>
                 </div>
                 <div className="text">
-                  <h3 className="title"><Link href="/products">Sunflower Oil<br />Light & Healthy</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Sunflower Oil<br />Light & Healthy</Link></h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70">
-                <div className="icon">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+                <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-seedling"></i>
                 </div>
                 <div className="text">
-                  <h3 className="title"><Link href="/products">Groundnut Oil<br />Rich Flavor</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Groundnut Oil<br />Rich Flavor</Link></h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70">
-                <div className="icon">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+                <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-balance-scale"></i>
                 </div>
                 <div className="text">
-                  <h3 className="title"><Link href="/products">Blended Oils<br />Perfect Balance</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Blended Oils<br />Perfect Balance</Link></h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-70">
-                <div className="icon">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+                <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-boxes"></i>
                 </div>
                 <div className="text">
-                  <h3 className="title"><Link href="/products">All Products<br />Complete Range</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">All Products<br />Complete Range</Link></h3>
                 </div>
               </div>
             </div>

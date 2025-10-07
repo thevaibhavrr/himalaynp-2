@@ -12,7 +12,7 @@ const AboutSection = () => {
                 <h2>Trusted Name in Edible Oil Industry Since 1978</h2>
               </div>
               <div className="quote-text mb-35">
-                <p>We are a trusted name in the edible oil industry, dedicated to delivering purity, quality, and health in every drop. With our brand, we strive to bring premium-grade oils to households, hotels, and businesses.</p>
+                <p className="text-justify max-w-3xl hyphens-auto" >We are a trusted name in the edible oil industry, dedicated to delivering purity, quality, and health in every drop. With our brand, we strive to bring premium-grade oils to households, hotels, and businesses.</p>
               </div>
               <div className="tab-content-box">
                 <ul className="nav nav-tabs mb-20">
@@ -26,12 +26,12 @@ const AboutSection = () => {
                 <div className="tab-content">
                   <div className="tab-pane fade show active" id="mission">
                     <div className="content-box-gap">
-                      <p>Our mission is to produce and deliver superior-quality edible oils that meet the highest standards of purity, health, and safety. We aim to delight customers through excellent packaging, reliable service, and consistent commitment to their nutritional needs.</p>
+                      <p className="text-justify max-w-3xl hyphens-auto">Our mission is to produce and deliver superior-quality edible oils that meet the highest standards of purity, health, and safety. We aim to delight customers through excellent packaging, reliable service, and consistent commitment to their nutritional needs.</p>
                     </div>
                   </div>
                   <div className="tab-pane fade" id="vision">
                     <div className="content-box-gap">
-                      <p>Our vision is to be a leading edible oil brand recognized globally for quality, trust, and innovation. We aspire to set new benchmarks in customer satisfaction and health-focused products while continuously enhancing our processes, packaging, and services.</p>
+                      <p className="text-justify max-w-3xl hyphens-auto">Our vision is to be a leading edible oil brand recognized globally for quality, trust, and innovation. We aspire to set new benchmarks in customer satisfaction and health-focused products while continuously enhancing our processes, packaging, and services.</p>
                     </div>
                   </div>
                 </div>
