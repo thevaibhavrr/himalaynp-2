@@ -199,17 +199,18 @@ export default function Services() {
       <section className="service-section pt-100 pb-80">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="section-title section-title-left mb-50 wow fadeInLeft">
+          <div className=" col-lg-12 section-title section-title-left mb-50 wow fadeInLeft">
                 <span className="sub-title">Our Expertise</span>
                 <h2>Premium Edible Oil Manufacturing & Distribution Services</h2>
               </div>
+            <div className="col-lg-6">
+            
               {/* Service Hero Images */}
               <div className="service-hero-images mb-40 wow fadeInLeft">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="service-hero-img mb-20">
-                      <img src="https://m.media-amazon.com/images/I/81Q5EIg1a5L.jpg" alt="Manufacturing Facility" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}} />
+                      <img src="https://m.media-amazon.com/images/I/81Q5EIg1a5L.jpg" alt="Manufacturing Facility" style={{width: '100%', height: '220px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}} />
                       <div className="img-caption">
                         <h6>Modern Manufacturing</h6>
                         <p>State-of-the-art facilities</p>
@@ -218,7 +219,7 @@ export default function Services() {
                   </div>
                   <div className="col-md-6">
                     <div className="service-hero-img mb-20">
-                      <img src="https://m.media-amazon.com/images/I/81Q5EIg1a5L._UF350,350_QL80_.jpg" alt="Quality Control Lab" style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}} />
+                      <img src="https://m.media-amazon.com/images/I/81Q5EIg1a5L._UF350,350_QL80_.jpg" alt="Quality Control Lab" style={{width: '100%', height: '220px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 5px 15px rgba(0,0,0,0.1)'}} />
                       <div className="img-caption">
                         <h6>Quality Control</h6>
                         <p>Rigorous testing standards</p>
@@ -232,16 +233,23 @@ export default function Services() {
               <p className="wow fadeInRight">With over 46 years of experience in edible oil manufacturing, Bharat Agro Oil provides comprehensive services from traditional extraction to modern distribution. Our commitment to quality ensures that every drop of oil meets the highest standards of purity and health.</p>
             </div>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {services.map(service => (
-              <div key={service.id} className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-                <div className={`service-box text-center mb-70 ${service.animation}`}>
-                  <div className="icon">
+              <div key={service.id} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div className={`service-box text-center mb-50 ${service.animation}`} style={{
+                  padding: '30px 20px', 
+                  borderRadius: '15px', 
+                  boxShadow: '0 5px 20px rgba(0,0,0,0.08)', 
+                  transition: 'all 0.3s ease',
+                  margin: '0 10px',
+                  height: '100%'
+                }}>
+                  <div className="icon mb-20">
                     <i className={service.icon}></i>
                   </div>
                   <div className="text">
-                    <h3 className="title"><a href="#">{service.title}</a></h3>
-                    <p>{service.description}</p>
+                    <h3 className="title mb-15"><a href="#">{service.title}</a></h3>
+                    <p className="mb-0">{service.description}</p>
                   </div>
                 </div>
               </div>
