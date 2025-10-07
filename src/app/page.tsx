@@ -134,25 +134,29 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-area-one">
         <div className="hero-slider-one">
-          <div className="single-slider homa_page_banner">
-            <div className="image-layer bg_cover" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}></div>
-           
+          <div className="single-slider homa_page_banner" style={{minHeight: '100vh'}}>
+            <div className="image-layer bg_cover" style={{
+              backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }}></div>
           </div>
-          <div className="single-slider homa_page_banner">
-            <div className="image-layer bg_cover" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/9b6f3b58-0e49-41b3-b041-2a95c525b2b9.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}></div>
-            <div className="container">
-
-            </div>
+          <div className="single-slider homa_page_banner" style={{minHeight: '100vh'}}>
+            <div className="image-layer bg_cover" style={{
+              backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/9b6f3b58-0e49-41b3-b041-2a95c525b2b9.__CR0,0,970,600_PT0_SX970_V1___.jpg')",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }}></div>
           </div>
-          <div className="single-slider homa_page_banner">
-            <div className="image-layer bg_cover" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/0ba4c099-476a-4401-b9a4-b377a1d688f2.__CR0,0,970,600_PT0_SX970_V1___.png')"}}></div>
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-10">
-                 
-                </div>
-              </div>
-            </div>
+          <div className="single-slider homa_page_banner" style={{minHeight: '100vh'}}>
+            <div className="image-layer bg_cover" style={{
+              backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/0ba4c099-476a-4401-b9a4-b377a1d688f2.__CR0,0,970,600_PT0_SX970_V1___.png')",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }}></div>
           </div>
         </div>
       </section>
@@ -256,36 +260,84 @@ export default function Home() {
         <div className="container">
           <div className="counter-wrap-one wow fadeInDown">
             <div className="counter-inner-box">
-              <div className="row">
-                <div className="col-lg-3 col-md-6 col-sm-12 counter-item">
-                  <div className="counter-inner">
+              <div className="row g-3">
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
+                  <div className="counter-inner" style={{
+                    padding: '20px 15px',
+                    textAlign: 'center',
+                    borderRadius: '10px',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+                    marginBottom: '20px',
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
+                  }}>
                     <div className="text">
-                      <h2 className="number"><span className="count">46</span>+</h2>
-                      <p>Years of Experience</p>
+                      <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
+                        <span className="count">46</span>+
+                      </h2>
+                      <p style={{fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)', marginBottom: '0'}}>Years of Experience</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 counter-item">
-                  <div className="counter-inner">
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
+                  <div className="counter-inner" style={{
+                    padding: '20px 15px',
+                    textAlign: 'center',
+                    borderRadius: '10px',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+                    marginBottom: '20px',
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
+                  }}>
                     <div className="text">
-                      <h2 className="number"><span className="count">2000</span>+</h2>
-                      <p style={{whiteSpace: 'nowrap'}}>MT Monthly Production</p>
+                      <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
+                        <span className="count">2000</span>+
+                      </h2>
+                      <p style={{fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)', marginBottom: '0', whiteSpace: 'nowrap'}}>MT Monthly Production</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 counter-item">
-                  <div className="counter-inner">
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
+                  <div className="counter-inner" style={{
+                    padding: '20px 15px',
+                    textAlign: 'center',
+                    borderRadius: '10px',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+                    marginBottom: '20px',
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
+                  }}>
                     <div className="text">
-                      <h2 className="number"><span className="count">500</span>+</h2>
-                      <p>Happy Distributors</p>
+                      <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
+                        <span className="count">500</span>+
+                      </h2>
+                      <p style={{fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)', marginBottom: '0'}}>Happy Distributors</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 counter-item">
-                  <div className="counter-inner">
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
+                  <div className="counter-inner" style={{
+                    padding: '20px 15px',
+                    textAlign: 'center',
+                    borderRadius: '10px',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+                    marginBottom: '20px',
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
+                  }}>
                     <div className="text">
-                      <h2 className="number"><span className="count">5</span>+</h2>
-                      <p>States Coverage</p>
+                      <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
+                        <span className="count">5</span>+
+                      </h2>
+                      <p style={{fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)', marginBottom: '0'}}>States Coverage</p>
                     </div>
                   </div>
                 </div>

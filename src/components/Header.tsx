@@ -124,7 +124,7 @@ export default function Header() {
         </div>
         
         <div className="header-navigation navigation-one">
-          <div className="nav-overlay"></div>
+          <div className="nav-overlay" onClick={toggleMenu} style={{display: isMenuOpen ? 'block' : 'none'}}></div>
           <div className="container-1350">
             <div className="primary-menu">
               <div className="site-branding">
@@ -138,27 +138,17 @@ export default function Header() {
               </div>
               <div className="nav-inner-menu">
                 <div className="nav-menu">
-                  {/* Mobile Logo */}
-                  <div className="mobile-logo mb-30 d-block d-xl-none text-center">
-                    <Link href="/" className="brand-logo">
-                      <img 
-                        src="/assets/images/logo/new-logo.png" 
-                        alt="Bharat Agro Oil Logo" 
-                        style={{maxWidth: '150px', height: 'auto'}}
-                      />
-                    </Link>
-                  </div>
-                         {/* Main Menu */}
-                         <nav className="main-menu">
-                           <ul>
-                             <li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
-                             <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About Us</Link></li>
-                             <li><Link href="/products" className={pathname === '/products' ? 'active' : ''}>Our Products</Link></li>
-                             <li><Link href="/recipes" className={pathname === '/recipes' ? 'active' : ''}>Recipes</Link></li>
-                             <li><Link href="/services" className={pathname === '/services' ? 'active' : ''}>Service page</Link></li>
-                             <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact Us</Link></li>
-                           </ul>
-                         </nav>
+                  {/* Main Menu */}
+                  <nav className="main-menu">
+                    <ul>
+                      <li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
+                      <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About Us</Link></li>
+                      <li><Link href="/products" className={pathname === '/products' ? 'active' : ''}>Our Products</Link></li>
+                      <li><Link href="/recipes" className={pathname === '/recipes' ? 'active' : ''}>Recipes</Link></li>
+                      <li><Link href="/services" className={pathname === '/services' ? 'active' : ''}>Service page</Link></li>
+                      <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact Us</Link></li>
+                    </ul>
+                  </nav>
                 </div>
                 {/* Nav Right Item */}
                 <div className="nav-right-item">
@@ -169,6 +159,159 @@ export default function Header() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* Mobile Menu Sidebar */}
+          <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`} style={{
+            position: 'fixed',
+            top: '0',
+            left: isMenuOpen ? '0' : '-100%',
+            width: '300px',
+            height: '100vh',
+            backgroundColor: '#fff',
+            zIndex: '9999',
+            transition: 'left 0.3s ease',
+            boxShadow: '5px 0 15px rgba(0,0,0,0.1)',
+            overflowY: 'auto'
+          }}>
+            <div style={{padding: '20px'}}>
+              {/* Mobile Logo */}
+              <div className="mobile-logo mb-30 text-center">
+                <Link href="/" className="brand-logo" onClick={toggleMenu}>
+                  <img 
+                    src="/assets/images/logo/new-logo.png" 
+                    alt="Bharat Agro Oil Logo" 
+                    style={{maxWidth: '150px', height: 'auto'}}
+                  />
+                </Link>
+              </div>
+              
+              {/* Mobile Menu Items */}
+              <nav className="mobile-main-menu">
+                <ul style={{listStyle: 'none', padding: '0', margin: '0'}}>
+                  <li style={{marginBottom: '15px'}}>
+                    <Link 
+                      href="/" 
+                      className={pathname === '/' ? 'active' : ''} 
+                      onClick={toggleMenu}
+                      style={{
+                        display: 'block',
+                        padding: '12px 15px',
+                        textDecoration: 'none',
+                        color: pathname === '/' ? '#ffc107' : '#333',
+                        fontSize: '16px',
+                        fontWeight: pathname === '/' ? 'bold' : 'normal',
+                        borderLeft: pathname === '/' ? '3px solid #ffc107' : '3px solid transparent',
+                        backgroundColor: pathname === '/' ? '#fff9e6' : 'transparent',
+                        borderRadius: '5px'
+                      }}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li style={{marginBottom: '15px'}}>
+                    <Link 
+                      href="/about" 
+                      className={pathname === '/about' ? 'active' : ''} 
+                      onClick={toggleMenu}
+                      style={{
+                        display: 'block',
+                        padding: '12px 15px',
+                        textDecoration: 'none',
+                        color: pathname === '/about' ? '#ffc107' : '#333',
+                        fontSize: '16px',
+                        fontWeight: pathname === '/about' ? 'bold' : 'normal',
+                        borderLeft: pathname === '/about' ? '3px solid #ffc107' : '3px solid transparent',
+                        backgroundColor: pathname === '/about' ? '#fff9e6' : 'transparent',
+                        borderRadius: '5px'
+                      }}
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li style={{marginBottom: '15px'}}>
+                    <Link 
+                      href="/products" 
+                      className={pathname === '/products' ? 'active' : ''} 
+                      onClick={toggleMenu}
+                      style={{
+                        display: 'block',
+                        padding: '12px 15px',
+                        textDecoration: 'none',
+                        color: pathname === '/products' ? '#ffc107' : '#333',
+                        fontSize: '16px',
+                        fontWeight: pathname === '/products' ? 'bold' : 'normal',
+                        borderLeft: pathname === '/products' ? '3px solid #ffc107' : '3px solid transparent',
+                        backgroundColor: pathname === '/products' ? '#fff9e6' : 'transparent',
+                        borderRadius: '5px'
+                      }}
+                    >
+                      Our Products
+                    </Link>
+                  </li>
+                  <li style={{marginBottom: '15px'}}>
+                    <Link 
+                      href="/recipes" 
+                      className={pathname === '/recipes' ? 'active' : ''} 
+                      onClick={toggleMenu}
+                      style={{
+                        display: 'block',
+                        padding: '12px 15px',
+                        textDecoration: 'none',
+                        color: pathname === '/recipes' ? '#ffc107' : '#333',
+                        fontSize: '16px',
+                        fontWeight: pathname === '/recipes' ? 'bold' : 'normal',
+                        borderLeft: pathname === '/recipes' ? '3px solid #ffc107' : '3px solid transparent',
+                        backgroundColor: pathname === '/recipes' ? '#fff9e6' : 'transparent',
+                        borderRadius: '5px'
+                      }}
+                    >
+                      Recipes
+                    </Link>
+                  </li>
+                  <li style={{marginBottom: '15px'}}>
+                    <Link 
+                      href="/services" 
+                      className={pathname === '/services' ? 'active' : ''} 
+                      onClick={toggleMenu}
+                      style={{
+                        display: 'block',
+                        padding: '12px 15px',
+                        textDecoration: 'none',
+                        color: pathname === '/services' ? '#ffc107' : '#333',
+                        fontSize: '16px',
+                        fontWeight: pathname === '/services' ? 'bold' : 'normal',
+                        borderLeft: pathname === '/services' ? '3px solid #ffc107' : '3px solid transparent',
+                        backgroundColor: pathname === '/services' ? '#fff9e6' : 'transparent',
+                        borderRadius: '5px'
+                      }}
+                    >
+                      Service page
+                    </Link>
+                  </li>
+                  <li style={{marginBottom: '15px'}}>
+                    <Link 
+                      href="/contact" 
+                      className={pathname === '/contact' ? 'active' : ''} 
+                      onClick={toggleMenu}
+                      style={{
+                        display: 'block',
+                        padding: '12px 15px',
+                        textDecoration: 'none',
+                        color: pathname === '/contact' ? '#ffc107' : '#333',
+                        fontSize: '16px',
+                        fontWeight: pathname === '/contact' ? 'bold' : 'normal',
+                        borderLeft: pathname === '/contact' ? '3px solid #ffc107' : '3px solid transparent',
+                        backgroundColor: pathname === '/contact' ? '#fff9e6' : 'transparent',
+                        borderRadius: '5px'
+                      }}
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
