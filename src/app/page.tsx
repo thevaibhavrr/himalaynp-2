@@ -348,77 +348,227 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="popular-service p-r z-1 pt-130 pb-135">
+      <section className="popular-service p-r z-1 pt-80 pb-80" style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
-              <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title"><i className="fas fa-sun text-warning"></i> Why Choose Us <i className="fas fa-sun ps-1 text-warning"></i></span>
-                <h2>What Makes Our Edible Oils Special</h2>
+              <div className="section-title text-center mb-60 wow fadeInDown">
+                <span className="sub-title" style={{fontSize: '16px', color: '#ffc107', fontWeight: '600'}}>
+                  <i className="fas fa-star text-warning me-2"></i> Why Choose Us <i className="fas fa-star text-warning ms-2"></i>
+                </span>
+                <h2 style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 'bold', color: '#333'}}>What Makes Our Edible Oils Special</h2>
+                <p style={{fontSize: '16px', color: '#666', marginTop: '15px'}}>Discover the unique qualities that set our oils apart from the rest</p>
               </div>
             </div>
           </div>
-          <div className="row align-items-center">
-            <div className="col-lg-4">
-              <div className="single-service-item mb-50 wow fadeInUp">
-                <div className="icon">
-                  <img src="/assets/images/icon/icon-1.png" alt="Traditional Icon" />
+          <div className="row g-5">
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-card wow fadeInUp" style={{
+                background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
+                padding: '25px 20px',
+                borderRadius: '15px',
+                boxShadow: '0 10px 25px rgba(238, 206, 56, 0.15)',
+                textAlign: 'center',
+                height: 'auto',
+                transition: 'all 0.3s ease',
+                border: '2px solid #eece38',
+                marginBottom: '25px'
+              }}>
+                <div className="icon mb-20" style={{marginBottom: '15px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #eece38, #d4af37)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(238, 206, 56, 0.3)'
+                  }}>
+                    <i className="fas fa-seedling" style={{fontSize: '28px', color: '#fff'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3><Link href="/services">Traditional Process</Link></h3>
-                  <p>Using traditional Kolhu extraction for pure, natural oil</p>
-                </div>
-              </div>
-              <div className="single-service-item mb-50 wow fadeInDown">
-                <div className="icon">
-                  <img src="/assets/images/icon/icon-2.png" alt="Natural Icon" />
-                </div>
-                <div className="text">
-                  <h3><Link href="/services">Natural Filtration</Link></h3>
-                  <p>No chemical refining - naturally filtered for health</p>
-                </div>
-              </div>
-              <div className="single-service-item mb-50 wow fadeInUp">
-                <div className="icon">
-                  <img src="/assets/images/icon/icon-3.png" alt="Quality Icon" />
-                </div>
-                <div className="text">
-                  <h3><Link href="/services">Premium Quality</Link></h3>
-                  <p>FSSAI certified with highest quality standards</p>
+                  <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#333'}}>
+                    <Link href="/services" style={{color: '#333', textDecoration: 'none'}}>Traditional Process</Link>
+                  </h3>
+                  <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '0'}}>Using traditional Kolhu extraction for pure, natural oil that preserves authentic flavors and nutrients.</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="img-holder mb-50 wow fadeInDown">
-                <img src="https://scontent-del1-1.cdninstagram.com/v/t39.30808-6/506210739_1148388777329397_8214500637407023051_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=108&ig_cache_key=MzY1MjQ2OTMyNzQ1MjE3MTg0OA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE2Mzh4MjA0OC5zZHIuQzMifQ%3D%3D&_nc_ohc=QH3ii9cGIkoQ7kNvwFaJqpy&_nc_oc=AdkROp_F9xcfLkKGhx8cfSe2ffBLyWp-t7SIVYjNithDvwgqXfgmGJ22XBs697MC8eA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_gid=3bejjFuhLgyulfAB2HaTVg&oh=00_AffWHQEbiASYQMSG0HZileZusbVKwKmq68zGjMvSswYpJw&oe=68E68909" alt="Oil Benefits" />
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-card wow fadeInUp" style={{
+                background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
+                padding: '25px 20px',
+                borderRadius: '15px',
+                boxShadow: '0 10px 25px rgba(238, 206, 56, 0.15)',
+                textAlign: 'center',
+                height: 'auto',
+                transition: 'all 0.3s ease',
+                border: '2px solid #eece38',
+                marginBottom: '25px'
+              }}>
+                <div className="icon mb-20" style={{marginBottom: '15px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #eece38, #d4af37)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(238, 206, 56, 0.3)'
+                  }}>
+                    <i className="fas fa-filter" style={{fontSize: '28px', color: '#fff'}}></i>
+                  </div>
+                </div>
+                <div className="text">
+                  <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#333'}}>
+                    <Link href="/services" style={{color: '#333', textDecoration: 'none'}}>Natural Filtration</Link>
+                  </h3>
+                  <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '0'}}>No chemical refining - naturally filtered for health and purity without compromising nutritional value.</p>
+                </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="single-service-item mb-50 card-rtl wow fadeInDown">
-                <div className="icon">
-                  <img src="/assets/images/icon/icon-4.png" alt="Healthy Icon" />
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-card wow fadeInUp" style={{
+                background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
+                padding: '25px 20px',
+                borderRadius: '15px',
+                boxShadow: '0 10px 25px rgba(238, 206, 56, 0.15)',
+                textAlign: 'center',
+                height: 'auto',
+                transition: 'all 0.3s ease',
+                border: '2px solid #eece38',
+                marginBottom: '25px'
+              }}>
+                <div className="icon mb-20" style={{marginBottom: '15px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #eece38, #d4af37)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(238, 206, 56, 0.3)'
+                  }}>
+                    <i className="fas fa-award" style={{fontSize: '28px', color: '#fff'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3><Link href="/recipes">Health Benefits</Link></h3>
-                  <p>Rich in nutrients and essential fatty acids</p>
+                  <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#333'}}>
+                    <Link href="/services" style={{color: '#333', textDecoration: 'none'}}>Premium Quality</Link>
+                  </h3>
+                  <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '0'}}>FSSAI certified with highest quality standards ensuring every drop meets regulatory requirements.</p>
                 </div>
               </div>
-              <div className="single-service-item mb-50 card-rtl fadeInUp">
-                <div className="icon">
-                  <img src="/assets/images/icon/icon-5.png" alt="Packaging Icon" />
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-card wow fadeInUp" style={{
+                background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
+                padding: '25px 20px',
+                borderRadius: '15px',
+                boxShadow: '0 10px 25px rgba(238, 206, 56, 0.15)',
+                textAlign: 'center',
+                height: 'auto',
+                transition: 'all 0.3s ease',
+                border: '2px solid #eece38',
+                marginBottom: '25px'
+              }}>
+                <div className="icon mb-20" style={{marginBottom: '15px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #eece38, #d4af37)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(238, 206, 56, 0.3)'
+                  }}>
+                    <i className="fas fa-heart" style={{fontSize: '28px', color: '#fff'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3><Link href="/products">Advanced Packaging</Link></h3>
-                  <p>Modern packaging to maintain freshness</p>
+                  <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#333'}}>
+                    <Link href="/recipes" style={{color: '#333', textDecoration: 'none'}}>Health Benefits</Link>
+                  </h3>
+                  <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '0'}}>Rich in nutrients and essential fatty acids that promote heart health and overall well-being.</p>
                 </div>
               </div>
-              <div className="single-service-item mb-50 card-rtl wow fadeInDown">
-                <div className="icon">
-                  <img src="/assets/images/icon/icon-6.png" alt="Distribution Icon" />
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-card wow fadeInUp" style={{
+                background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
+                padding: '25px 20px',
+                borderRadius: '15px',
+                boxShadow: '0 10px 25px rgba(238, 206, 56, 0.15)',
+                textAlign: 'center',
+                height: 'auto',
+                transition: 'all 0.3s ease',
+                border: '2px solid #eece38',
+                marginBottom: '25px'
+              }}>
+                <div className="icon mb-20" style={{marginBottom: '15px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #eece38, #d4af37)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(238, 206, 56, 0.3)'
+                  }}>
+                    <i className="fas fa-box" style={{fontSize: '28px', color: '#fff'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3><Link href="/contact">Wide Distribution</Link></h3>
-                  <p>Available across multiple states and online</p>
+                  <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#333'}}>
+                    <Link href="/products" style={{color: '#333', textDecoration: 'none'}}>Advanced Packaging</Link>
+                  </h3>
+                  <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '0'}}>Modern packaging technology to maintain freshness and extend shelf life of premium oils.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="feature-card wow fadeInUp" style={{
+                background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
+                padding: '25px 20px',
+                borderRadius: '15px',
+                boxShadow: '0 10px 25px rgba(238, 206, 56, 0.15)',
+                textAlign: 'center',
+                height: 'auto',
+                transition: 'all 0.3s ease',
+                border: '2px solid #eece38',
+                marginBottom: '25px'
+              }}>
+                <div className="icon mb-20" style={{marginBottom: '15px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #eece38, #d4af37)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(238, 206, 56, 0.3)'
+                  }}>
+                    <i className="fas fa-truck" style={{fontSize: '28px', color: '#fff'}}></i>
+                  </div>
+                </div>
+                <div className="text">
+                  <h3 style={{fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#333'}}>
+                    <Link href="/contact" style={{color: '#333', textDecoration: 'none'}}>Wide Distribution</Link>
+                  </h3>
+                  <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', marginBottom: '0'}}>Available across multiple states and online platforms for convenient access to premium oils.</p>
                 </div>
               </div>
             </div>
@@ -478,13 +628,13 @@ export default function Home() {
       <Testimonials />
 
      {/* Contact Section - Yellow Theme */}
-     <section className="contact-one p-r z-2 bg-white">
+     <section className="contact-one p-r z-2 bg-white" style={{ padding: '20px 100px' }}>
       <div className="container-fluid">
         <div className="row no-gutters">
           <div className="col-lg-6">
-            <div className="contact-one_content-box wow fadeInLeft">
+            <div className="contact-one_content-box wow fadeInLeft" style={{ padding: '40px 30px' }}>
               <div className="contact-wrapper">
-                <div className="section-title text-center mb-40">
+                <div className="section-title text-center mb-20">
                   <span className="sub-title">Get In Touch</span>
                   <h2>Interested in Our Products? Become a Distributor Today!</h2>
                 </div>
@@ -494,7 +644,7 @@ export default function Home() {
                     name="contactForm" 
                     method="post"
                   >
-                    <div className="form_group form-group">
+                    <div className="form_group form-group" style={{ marginBottom: '15px' }}>
                       <input 
                         type="text" 
                         className="form_control" 
@@ -502,9 +652,10 @@ export default function Home() {
                         id="name" 
                         name="name" 
                         required 
+                        style={{ padding: '12px 15px' }}
                       />
                     </div>
-                    <div className="form_group form-group">
+                    <div className="form_group form-group" style={{ marginBottom: '15px' }}>
                       <input 
                         type="email" 
                         className="form_control" 
@@ -512,9 +663,10 @@ export default function Home() {
                         id="email" 
                         name="email" 
                         required 
+                        style={{ padding: '12px 15px' }}
                       />
                     </div>
-                    <div className="form_group form-group">
+                    <div className="form_group form-group" style={{ marginBottom: '15px' }}>
                       <input 
                         type="tel" 
                         className="form_control" 
@@ -522,9 +674,10 @@ export default function Home() {
                         id="phone" 
                         name="phone" 
                         required 
+                        style={{ padding: '12px 15px' }}
                       />
                     </div>
-                    <div className="form_group form-group">
+                    <div className="form_group form-group" style={{ marginBottom: '15px' }}>
                       <input 
                         type="text" 
                         className="form_control" 
@@ -532,15 +685,17 @@ export default function Home() {
                         id="location" 
                         name="location" 
                         required 
+                        style={{ padding: '12px 15px' }}
                       />
                     </div>
-                    <div className="form_group form-group">
+                    <div className="form_group form-group" style={{ marginBottom: '15px' }}>
                       <textarea 
                         className="form_control" 
                         placeholder="Your Message or Business Inquiry" 
                         id="message" 
                         name="message" 
                         required 
+                        style={{ padding: '12px 15px', height: '80px' }}
                       />
                     </div>
                     <div className="form_group form-group">
@@ -556,14 +711,13 @@ export default function Home() {
           <div className="col-lg-6">
             <div 
               className="contact-one_information-box bg_cover wow fadeInRight" 
-              style={{ backgroundImage: "url('https://companyformationindia.com/images/c.jpg')" }}
+              style={{ backgroundImage: "url('https://companyformationindia.com/images/c.jpg')", padding: '40px 30px' }}
             >
-              <div className="information-box"
-              >
-                <h3>Contact Information</h3>
-                <p>Get in touch with us for bulk orders, distribution inquiries, or any questions about our products.</p>
+              <div className="information-box">
+                <h3 style={{ marginBottom: '15px' }}>Contact Information</h3>
+                <p style={{ marginBottom: '20px' }}>Get in touch with us for bulk orders, distribution inquiries, or any questions about our products.</p>
                 
-                <div className="information-item_one d-flex mb-25">
+                <div className="information-item_one d-flex mb-15">
                   <div className="icon">
                     <i className="flaticon-placeholder"></i>
                   </div>
@@ -573,7 +727,7 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="information-item_one d-flex mb-25">
+                <div className="information-item_one d-flex mb-15">
                   <div className="icon">
                     <i className="flaticon-email"></i>
                   </div>
@@ -585,7 +739,7 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="information-item_one d-flex mb-25">
+                <div className="information-item_one d-flex mb-15">
                   <div className="icon">
                     <i className="flaticon-phone-call"></i>
                   </div>
@@ -597,7 +751,7 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="information-item_one d-flex mb-25">
+                <div className="information-item_one d-flex mb-15">
                   <div className="icon">
                     <i className="fab fa-whatsapp"></i>
                   </div>
