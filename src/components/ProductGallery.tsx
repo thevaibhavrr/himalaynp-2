@@ -105,13 +105,13 @@ const ProductGallery = () => {
                   }}>
                   <div className="hover-content" style={{ textAlign: 'center', color: 'white' }}>
                     <h3 className="title" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>
-                      <Link href="/products" style={{ color: 'white', textDecoration: 'none' }}>Pure Mustard Oil</Link>
+                      <Link href="/products?category=mustard" style={{ color: 'white', textDecoration: 'none' }}>Pure Mustard Oil</Link>
                     </h3>
                     <p style={{ fontSize: '14px', marginBottom: '15px' }}>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none', marginRight: '10px' }}>Traditional</Link>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none' }}>Healthy</Link>
                     </p>
-                    <Link href="/products" className="main-btn" style={{
+                    <Link href="/products?category=mustard" className="main-btn" style={{
                       padding: '8px 20px',
                       fontSize: '14px',
                       backgroundColor: 'white',
@@ -181,13 +181,13 @@ const ProductGallery = () => {
                   }}>
                   <div className="hover-content" style={{ textAlign: 'center', color: 'white' }}>
                     <h3 className="title" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>
-                      <Link href="/products" style={{ color: 'white', textDecoration: 'none' }}>Soybean Oil</Link>
+                      <Link href="/products?category=soybean" style={{ color: 'white', textDecoration: 'none' }}>Soybean Oil</Link>
                     </h3>
                     <p style={{ fontSize: '14px', marginBottom: '15px' }}>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none', marginRight: '10px' }}>Heart Healthy</Link>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none' }}>Light</Link>
                     </p>
-                    <Link href="/products" className="main-btn" style={{
+                    <Link href="/products?category=soybean" className="main-btn" style={{
                       padding: '8px 20px',
                       fontSize: '14px',
                       backgroundColor: 'white',
@@ -257,13 +257,13 @@ const ProductGallery = () => {
                   }}>
                   <div className="hover-content" style={{ textAlign: 'center', color: 'white' }}>
                     <h3 className="title" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>
-                      <Link href="/products" style={{ color: 'white', textDecoration: 'none' }}>Sunflower Oil</Link>
+                      <Link href="/products?category=sunflower" style={{ color: 'white', textDecoration: 'none' }}>Sunflower Oil</Link>
                     </h3>
                     <p style={{ fontSize: '14px', marginBottom: '15px' }}>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none', marginRight: '10px' }}>Light</Link>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none' }}>Healthy</Link>
                     </p>
-                    <Link href="/products" className="main-btn" style={{
+                    <Link href="/products?category=sunflower" className="main-btn" style={{
                       padding: '8px 20px',
                       fontSize: '14px',
                       backgroundColor: 'white',
@@ -333,13 +333,13 @@ const ProductGallery = () => {
                   }}>
                   <div className="hover-content" style={{ textAlign: 'center', color: 'white' }}>
                     <h3 className="title" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>
-                      <Link href="/products" style={{ color: 'white', textDecoration: 'none' }}>Groundnut Oil</Link>
+                      <Link href="/products?category=groundnut" style={{ color: 'white', textDecoration: 'none' }}>Groundnut Oil</Link>
                     </h3>
                     <p style={{ fontSize: '14px', marginBottom: '15px' }}>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none', marginRight: '10px' }}>Rich Flavor</Link>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none' }}>Natural</Link>
                     </p>
-                    <Link href="/products" className="main-btn" style={{
+                    <Link href="/products?category=groundnut" className="main-btn" style={{
                       padding: '8px 20px',
                       fontSize: '14px',
                       backgroundColor: 'white',
@@ -409,13 +409,13 @@ const ProductGallery = () => {
                   }}>
                   <div className="hover-content" style={{ textAlign: 'center', color: 'white' }}>
                     <h3 className="title" style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>
-                      <Link href="/products" style={{ color: 'white', textDecoration: 'none' }}>Blended Oil</Link>
+                      <Link href="/products?category=blended" style={{ color: 'white', textDecoration: 'none' }}>Blended Oil</Link>
                     </h3>
                     <p style={{ fontSize: '14px', marginBottom: '15px' }}>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none', marginRight: '10px' }}>Balanced</Link>
                       <Link href="#" style={{ color: 'white', textDecoration: 'none' }}>Healthy</Link>
                     </p>
-                    <Link href="/products" className="main-btn" style={{
+                    <Link href="/products?category=blended" className="main-btn" style={{
                       padding: '8px 20px',
                       fontSize: '14px',
                       backgroundColor: 'white',
