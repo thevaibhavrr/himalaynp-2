@@ -130,6 +130,18 @@ export default function Home() {
   }, [])
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 500px) {
+          .mobile-gap-5 {
+            gap: 10px !important;
+          }
+        }
+        @media (min-width: 501px) {
+          .mobile-gap-5 {
+            gap: 0 !important;
+          }
+        }
+      `}</style>
       <Header />
       {/* Hero Section */}
       <section className="hero-area-one">
@@ -175,7 +187,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="row mb-100 g-4">
+          <div className="row mb-100 g-4 mobile-gap-5">
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
               <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
@@ -260,7 +272,7 @@ export default function Home() {
         <div className="container">
           <div className="counter-wrap-one wow fadeInDown">
             <div className="counter-inner-box">
-              <div className="row g-4">
+              <div className="row g-4 mobile-gap-5">
                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
                   <div className="counter-inner" style={{
                     padding: '25px 20px',
@@ -620,7 +632,7 @@ export default function Home() {
                         <h5>Customer<br />Satisfaction</h5>
                       </div>
                     </div>
-                  </div>˝g
+                  </div>
                 </div>
               </div>
             </div>
