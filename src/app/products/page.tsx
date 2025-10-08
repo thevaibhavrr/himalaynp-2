@@ -4,10 +4,10 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PageBanner from '@/components/PageBanner'
 import { getBannerImage } from '@/config/bannerImages'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-export default function Products() {
+function ProductsContent() {
   const searchParams = useSearchParams()
   const [activeFilter, setActiveFilter] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
@@ -1024,5 +1024,24 @@ export default function Products() {
 
       <Footer />
     </>
+  )
+}
+
+export default function Products() {
+  return (
+    <Suspense fallback={
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        fontSize: '18px',
+        color: '#666'
+      }}>
+        Loading products...
+      </div>
+    }>
+      <ProductsContent />
+    </Suspense>
   )
 }

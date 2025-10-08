@@ -590,28 +590,33 @@ Our Premium Products
                   background: 'linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%)',
                   zIndex: 1
                 }}></div>
-                <a href="https://youtu.be/UTN60h5L5rc?si=3wLPaNwXeHiRdsO3" className="video-popup" style={{
-                  position: 'relative',
-                  zIndex: 2,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '80px',
-                  height: '80px',
-                  background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
-                  borderRadius: '50%',
-                  textDecoration: 'none',
-                  boxShadow: '0 10px 30px rgba(255, 193, 7, 0.5)',
-                  transition: 'all 0.3s ease'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.1)';
-                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(255, 193, 7, 0.7)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(255, 193, 7, 0.5)';
-                }}>
+                <a 
+                  href="https://www.youtube.com/watch?v=UTN60h5L5rc" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="video-popup" 
+                  style={{
+                    position: 'relative',
+                    zIndex: 2,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '80px',
+                    height: '80px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    textDecoration: 'none',
+                    boxShadow: '0 10px 30px rgba(255, 193, 7, 0.5)',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.1)';
+                    e.currentTarget.style.boxShadow = '0 15px 40px rgba(255, 193, 7, 0.7)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(255, 193, 7, 0.5)';
+                  }}>
                   <i className="fas fa-play" style={{fontSize: '24px', color: 'white', marginLeft: '4px'}}></i>
                 </a>
                 <div className="video-content" style={{
