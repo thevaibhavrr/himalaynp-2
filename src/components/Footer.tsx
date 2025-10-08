@@ -6,50 +6,29 @@ export default function Footer() {
       {/* Footer */}
       <footer className="footer-default footer-white dark-black-bg">
         <div className="container">
-          <div className="footer-top wow fadeInUp">
-            <div className="row">
-              <div className="col-lg-4 col-md-12 footer-contact-item">
-                <div className="contact-info d-flex justify-content-center">
-                <div className="site-logo text-center" style={{backgroundColor: '#fff', padding: '10px', borderRadius: '8px'}}>
-                    <Link href="/" className="brand-logo">
-                      <img 
-                        src="/assets/images/logo/new-logo.png" 
-                        alt="Bharat Agro Oil Logo"
-                        style={{maxWidth: '120px', height: 'auto'}}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-12 footer-contact-item">
-                <div className="contact-info d-flex">
-                  <div className="icon">
-                    <i className="flaticon-placeholder"></i>
-                  </div>
-                  <div className="text">
-                    <h5>Our Factory</h5>
-                    <h6 style={{whiteSpace: 'nowrap'}}>Modinagar, Ghaziabad, UP</h6>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-12 footer-contact-item">
-                <div className="contact-info d-flex">
-                  <div className="icon">
-                    <i className="flaticon-email"></i>
-                  </div>
-                  <div className="text">
-                    <h5>Email Us</h5>
-                    <h6><a href="mailto:bharatagrooil@yahoo.in">bharatagrooil@yahoo.in</a></h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="footer-widget" style={{paddingTop: '40px', paddingBottom: '20px'}}>
             <div className="row">
               <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12">
                 <div className="footer-widget about-widget mb-30 wow fadeInDown">
-                  <h4 className="widget-title" style={{fontSize: '18px', marginBottom: '15px'}}>About Bharat Agro Oil</h4>
+                  <div className="footer-logo mb-20" style={{marginBottom: '20px'}}>
+                    <div style={{
+                      backgroundColor: '#fff',
+                      padding: '15px 20px',
+                      borderRadius: '10px',
+                      display: 'inline-block',
+                      boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+                    }}>
+                      <img 
+                        src="/assets/images/logo/new-logo.png" 
+                        alt="Bharat Agro Oil Logo" 
+                        style={{
+                          height: '50px',
+                          width: 'auto',
+                          objectFit: 'contain'
+                        }}
+                      />
+                    </div>
+                  </div>
                   <div className="footer-about-content">
                     <p style={{fontSize: '14px', lineHeight: '1.5', marginBottom: '15px'}}>Since 1978, we have been dedicated to delivering purity, quality, and health in every drop. We strive to bring premium-grade edible oils to households, hotels, and businesses across India.</p>
                     <div className="social-box">
