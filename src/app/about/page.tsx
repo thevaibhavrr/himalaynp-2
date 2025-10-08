@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
+import PageBanner from '@/components/PageBanner'
 
 
 export default function About() {
@@ -9,22 +9,11 @@ export default function About() {
       <Header />
       
       {/* Page Banner */}
-      <section className="page-banner bg_cover position-relative z-1"
-        style={{
-          backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')", 
-          backgroundSize: 'cover', 
-          backgroundPosition: 'center',
-          minHeight: '600px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
-        <div className="brand-card text-center">
-          <Image src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo" width={120} height={120} style={{maxWidth: '120px'}} />
-          <h3>Bharat Agro Oil</h3>
-          <p>Premium Edible Oils Since 1978</p>
-        </div>
-      </section>
+      <PageBanner 
+        backgroundImage="https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg"
+        title="About Us"
+        subtitle="India's Trusted Edible Oil Manufacturer Since 1978"
+      />
 
       {/* About Section */}
       <section className="about-section p-r z-1 pt-100 pb-80">

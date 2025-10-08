@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
+import PageBanner from '@/components/PageBanner'
+import { getBannerImage } from '@/config/bannerImages'
 
 
 export default function Contact() {
@@ -9,22 +10,11 @@ export default function Contact() {
       <Header />
       
       {/* Page Banner */}
-      <section className="page-banner bg_cover p-r z-1" 
-        style={{
-          backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          minHeight: '600px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
-        <div className="brand-card text-center">
-          <Image src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo" width={120} height={120} style={{maxWidth: '120px'}} />
-          <h3>Bharat Agro Oil</h3>
-          <p>Premium Edible Oils Since 1978</p>
-        </div>
-      </section>
+      <PageBanner 
+        backgroundImage={getBannerImage('contact')}
+        title="Contact Us"
+        subtitle="Get in Touch for Premium Quality Edible Oils"
+      />
 
       {/* Contact Information Section */}
       <section className="contact-information-one p-r z-1 pt-80 pb-60" style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>

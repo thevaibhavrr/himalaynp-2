@@ -2,6 +2,8 @@
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import PageBanner from '@/components/PageBanner'
+import { getBannerImage } from '@/config/bannerImages'
 import { useState, useEffect } from 'react'
 
 export default function Products() {
@@ -260,28 +262,11 @@ export default function Products() {
       <Header />
       
       {/* Product Hero Section */}
-      <section className="product-hero" style={{
-        background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        color: 'white',
-        padding: '120px 0 80px',
-        textAlign: 'center',
-        minHeight: '600px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              {/* <h1>Our Premium Products</h1> */}
-              {/* <p>Pure, natural, and healthy cooking oils for your family</p> */}
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageBanner 
+        backgroundImage={getBannerImage('products')}
+        title="Our Premium Products"
+        subtitle="Pure, natural, and healthy cooking oils for your family"
+      />
 
       {/* Category Filter Section */}
       <section className="category-filter" style={{background: '#f8f9fa', padding: '40px 0'}}>

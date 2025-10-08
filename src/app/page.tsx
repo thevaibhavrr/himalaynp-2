@@ -241,7 +241,7 @@ export default function Home() {
                   marginBottom: '15px',
                   display: 'inline-block'
                 }}>
-                  <i className="fas fa-seedling me-2"></i> Our Premium Products <i className="fas fa-seedling ms-2"></i>
+Our Premium Products 
                 </span>
                 <h2 style={{
                   fontSize: 'clamp(2rem, 5vw, 3rem)',
@@ -726,7 +726,7 @@ export default function Home() {
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
                 <span className="sub-title" style={{fontSize: '16px', color: '#ffc107', fontWeight: '600'}}>
-                  <i className="fas fa-star text-warning me-2"></i> Why Choose Us <i className="fas fa-star text-warning ms-2"></i>
+                  Why Choose Us 
                 </span>
                 <h2 style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 'bold', color: '#333'}}>What Makes Our Edible Oils Special</h2>
                 <p style={{fontSize: '16px', color: '#666', marginTop: '15px'}}>Discover the unique qualities that set our oils apart from the rest</p>

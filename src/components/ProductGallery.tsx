@@ -3,8 +3,7 @@ import Link from 'next/link';
 
 const ProductGallery = () => {
   return (
-    <section className="projects-section pt-130 pb-95 p-r z-1" style={{
-      background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+    <section className="projects-section pt-10 pb-95 p-r z-1" style={{
       position: 'relative',
       overflow: 'hidden'
     }}>
@@ -30,7 +29,7 @@ const ProductGallery = () => {
                 marginBottom: '15px',
                 display: 'inline-block'
               }}>
-                <i className="fas fa-images me-2"></i> Product Gallery <i className="fas fa-images ms-2"></i>
+Product Gallery 
               </span>
               <h2 style={{
                 fontSize: 'clamp(2rem, 5vw, 3rem)',
