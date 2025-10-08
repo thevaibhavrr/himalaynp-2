@@ -813,7 +813,7 @@ export default function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="farmers-team_two light-gray-bg pb-90 pt-80">
+      <section className="farmers-team_two light-gray-bg pb-90 pt-10">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
