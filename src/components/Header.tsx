@@ -70,7 +70,6 @@ export default function Header() {
               </div>
               <div className="col-xl-6 col-lg-12 col-md-12 col-6">
                 <div className="top-bar-right">
-                  <span className="text"><i className="far fa-clock"></i>Opening Hours : Monday - Saturday, 08:00 am - 06:00pm</span>
                   <ul className="social-link">
                     <li><a href="https://www.facebook.com/bharatagrooil" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://www.instagram.com/bharatagrooil/" target="_blank"><i className="fab fa-instagram"></i></a></li>

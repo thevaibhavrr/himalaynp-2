@@ -141,12 +141,49 @@ export default function Home() {
             gap: 0 !important;
           }
         }
+        
+        /* Enhanced hero content animation */
+        .hero-content h1 {
+          animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .hero-content p {
+          animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .hero-buttons {
+          animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translate3d(0, 40px, 0);
+          }
+          to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        
+        /* Improved mobile responsiveness for hero */
+        @media (max-width: 768px) {
+          .hero-buttons {
+            flex-direction: column;
+            gap: 15px !important;
+          }
+          
+          .hero-buttons .main-btn {
+            width: 100%;
+            text-align: center;
+          }
+        }
       `}</style>
       <Header />
       {/* Hero Section */}
       <section className="hero-area-one">
         <div className="hero-slider-one">
-          <div className="single-slider homa_page_banner" style={{minHeight: '100vh'}}>
+          <div className="single-slider homa_page_banner" style={{minHeight: '100vh', position: 'relative'}}>
             <div className="image-layer bg_cover" style={{
               backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')",
               backgroundPosition: 'center',
@@ -177,85 +214,404 @@ export default function Home() {
       <AboutSection />
 
       {/* Services Section */}
-      <section className="service-one dark-black-bg p-130 pb-25 p-r z-1 mb-100">
-        <div className="container">
+      <section className="service-one dark-black-bg p-130 pb-25 p-r z-1 mb-100" style={{
+        background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        {/* Background Pattern */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255, 193, 7, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.1) 0%, transparent 50%)',
+          zIndex: 1
+        }}></div>
+        
+        <div className="container" style={{position: 'relative', zIndex: 2}}>
           <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-10">
+            <div className="col-xl-8 col-lg-10">
               <div className="section-title section-title-white text-center mb-60 wow fadeInUp">
-                <span className="sub-title"><i className="fas fa-sun"></i> Our Products <i className="fas fa-sun ps-1"></i></span>
-                <h2>Premium Quality Edible Oils For Healthy Living</h2>
+                <span className="sub-title" style={{
+                  fontSize: '18px',
+                  color: '#ffc107',
+                  fontWeight: '600',
+                  marginBottom: '15px',
+                  display: 'inline-block'
+                }}>
+                  <i className="fas fa-seedling me-2"></i> Our Premium Products <i className="fas fa-seedling ms-2"></i>
+                </span>
+                <h2 style={{
+                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  lineHeight: '1.3'
+                }}>
+                  Premium Quality Edible Oils For Healthy Living
+                </h2>
+                <p style={{
+                  fontSize: '16px',
+                  color: '#ccc',
+                  marginTop: '20px',
+                  maxWidth: '600px',
+                  margin: '20px auto 0'
+                }}>
+                  Discover our range of pure, natural oils crafted with traditional methods and modern quality standards
+                </p>
               </div>
             </div>
           </div>
           <div className="row mb-100 g-4 mobile-gap-5">
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
-                <div className="icon" style={{marginBottom: '15px'}}>
-                  <i className="fas fa-seedling"></i>
+              <div className="service-box text-center mb-30 wow fadeInUp" style={{
+                padding: '30px 20px',
+                marginBottom: '20px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                borderRadius: '15px',
+                border: '1px solid rgba(255, 193, 7, 0.2)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
+                e.currentTarget.style.borderColor = '#ffc107';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(255, 193, 7, 0.2)';
+              }}>
+                <div className="icon" style={{marginBottom: '20px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(255, 193, 7, 0.4)'
+                  }}>
+                    <i className="fas fa-seedling" style={{fontSize: '28px', color: 'white'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Mustard Oil<br />Pure & Natural</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
+                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                      Mustard Oil<br />
+                      <span style={{color: '#ffc107', fontSize: '14px'}}>Pure & Natural</span>
+                    </Link>
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
-                <div className="icon" style={{marginBottom: '15px'}}>
-                  <i className="fas fa-heart"></i>
+              <div className="service-box text-center mb-30 wow fadeInUp" style={{
+                padding: '30px 20px',
+                marginBottom: '20px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                borderRadius: '15px',
+                border: '1px solid rgba(255, 193, 7, 0.2)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
+                e.currentTarget.style.borderColor = '#ffc107';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(255, 193, 7, 0.2)';
+              }}>
+                <div className="icon" style={{marginBottom: '20px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(255, 193, 7, 0.4)'
+                  }}>
+                    <i className="fas fa-heart" style={{fontSize: '28px', color: 'white'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Soybean Oil<br />Heart Healthy</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
+                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                      Soybean Oil<br />
+                      <span style={{color: '#ffc107', fontSize: '14px'}}>Heart Healthy</span>
+                    </Link>
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
-                <div className="icon" style={{marginBottom: '15px'}}>
-                  <i className="fas fa-sun"></i>
+              <div className="service-box text-center mb-30 wow fadeInUp" style={{
+                padding: '30px 20px',
+                marginBottom: '20px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                borderRadius: '15px',
+                border: '1px solid rgba(255, 193, 7, 0.2)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
+                e.currentTarget.style.borderColor = '#ffc107';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(255, 193, 7, 0.2)';
+              }}>
+                <div className="icon" style={{marginBottom: '20px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(255, 193, 7, 0.4)'
+                  }}>
+                    <i className="fas fa-sun" style={{fontSize: '28px', color: 'white'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Sunflower Oil<br />Light & Healthy</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
+                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                      Sunflower Oil<br />
+                      <span style={{color: '#ffc107', fontSize: '14px'}}>Light & Healthy</span>
+                    </Link>
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
-                <div className="icon" style={{marginBottom: '15px'}}>
-                  <i className="fas fa-seedling"></i>
+              <div className="service-box text-center mb-30 wow fadeInUp" style={{
+                padding: '30px 20px',
+                marginBottom: '20px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                borderRadius: '15px',
+                border: '1px solid rgba(255, 193, 7, 0.2)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
+                e.currentTarget.style.borderColor = '#ffc107';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(255, 193, 7, 0.2)';
+              }}>
+                <div className="icon" style={{marginBottom: '20px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(255, 193, 7, 0.4)'
+                  }}>
+                    <i className="fas fa-seedling" style={{fontSize: '28px', color: 'white'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Groundnut Oil<br />Rich Flavor</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
+                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                      Groundnut Oil<br />
+                      <span style={{color: '#ffc107', fontSize: '14px'}}>Rich Flavor</span>
+                    </Link>
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
-                <div className="icon" style={{marginBottom: '15px'}}>
-                  <i className="fas fa-balance-scale"></i>
+              <div className="service-box text-center mb-30 wow fadeInUp" style={{
+                padding: '30px 20px',
+                marginBottom: '20px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                borderRadius: '15px',
+                border: '1px solid rgba(255, 193, 7, 0.2)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
+                e.currentTarget.style.borderColor = '#ffc107';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(255, 193, 7, 0.2)';
+              }}>
+                <div className="icon" style={{marginBottom: '20px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(255, 193, 7, 0.4)'
+                  }}>
+                    <i className="fas fa-balance-scale" style={{fontSize: '28px', color: 'white'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">Blended Oils<br />Perfect Balance</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
+                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                      Blended Oils<br />
+                      <span style={{color: '#ffc107', fontSize: '14px'}}>Perfect Balance</span>
+                    </Link>
+                  </h3>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
-                <div className="icon" style={{marginBottom: '15px'}}>
-                  <i className="fas fa-boxes"></i>
+              <div className="service-box text-center mb-30 wow fadeInUp" style={{
+                padding: '30px 20px',
+                marginBottom: '20px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                borderRadius: '15px',
+                border: '1px solid rgba(255, 193, 7, 0.2)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
+                e.currentTarget.style.borderColor = '#ffc107';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(255, 193, 7, 0.2)';
+              }}>
+                <div className="icon" style={{marginBottom: '20px'}}>
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto',
+                    boxShadow: '0 5px 15px rgba(255, 193, 7, 0.4)'
+                  }}>
+                    <i className="fas fa-boxes" style={{fontSize: '28px', color: 'white'}}></i>
+                  </div>
                 </div>
                 <div className="text">
-                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.3'}}><Link href="/products">All Products<br />Complete Range</Link></h3>
+                  <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
+                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                      All Products<br />
+                      <span style={{color: '#ffc107', fontSize: '14px'}}>Complete Range</span>
+                    </Link>
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <div className="play-one_content-box bg_cover wow fadeInDown" style={{backgroundImage: "url('https://t4.ftcdn.net/jpg/01/04/09/67/360_F_104096754_n7JbqBjagQlM5RJ43YRftGTQ9s7D2evg.jpg')"}}>
-                <a href="https://youtu.be/UTN60h5L5rc?si=3wLPaNwXeHiRdsO3" className="video-popup"><i className="fas fa-play"></i></a>
-                <div className="video-content">
-                  <h4 style={{color: 'white'}}>Our Production Process</h4>
-                  <p style={{color: 'white'}}>See how we make pure, natural oils</p>
+              <div className="play-one_content-box bg_cover wow fadeInDown" style={{
+                backgroundImage: "url('https://t4.ftcdn.net/jpg/01/04/09/67/360_F_104096754_n7JbqBjagQlM5RJ43YRftGTQ9s7D2evg.jpg')",
+                borderRadius: '20px',
+                overflow: 'hidden',
+                position: 'relative',
+                minHeight: '300px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  background: 'linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%)',
+                  zIndex: 1
+                }}></div>
+                <a href="https://youtu.be/UTN60h5L5rc?si=3wLPaNwXeHiRdsO3" className="video-popup" style={{
+                  position: 'relative',
+                  zIndex: 2,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '80px',
+                  height: '80px',
+                  background: 'linear-gradient(135deg, #ffc107, #ff8f00)',
+                  borderRadius: '50%',
+                  textDecoration: 'none',
+                  boxShadow: '0 10px 30px rgba(255, 193, 7, 0.5)',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.1)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(255, 193, 7, 0.7)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(255, 193, 7, 0.5)';
+                }}>
+                  <i className="fas fa-play" style={{fontSize: '24px', color: 'white', marginLeft: '4px'}}></i>
+                </a>
+                <div className="video-content" style={{
+                  position: 'relative',
+                  zIndex: 2,
+                  textAlign: 'center',
+                  marginLeft: '30px'
+                }}>
+                  <h4 style={{color: 'white', fontSize: '24px', fontWeight: 'bold', marginBottom: '10px'}}>Our Production Process</h4>
+                  <p style={{color: 'white', fontSize: '16px', opacity: 0.9}}>See how we make pure, natural oils</p>
                 </div>
               </div>
             </div>

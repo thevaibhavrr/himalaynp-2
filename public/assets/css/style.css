@@ -714,7 +714,7 @@ button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    content: '|';
+    content: '';
     margin-left: 35px;
     margin-right: 30px; }
     @media (max-width: 767px) {
