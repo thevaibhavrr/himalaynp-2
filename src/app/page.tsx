@@ -175,9 +175,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="row mb-100">
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+          <div className="row mb-100 g-4">
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-seedling"></i>
                 </div>
@@ -186,8 +186,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-heart"></i>
                 </div>
@@ -196,8 +196,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-sun"></i>
                 </div>
@@ -206,8 +206,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-seedling"></i>
                 </div>
@@ -216,8 +216,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-balance-scale"></i>
                 </div>
@@ -226,8 +226,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-12">
-              <div className="service-box text-center mb-30" style={{padding: '20px 15px'}}>
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+              <div className="service-box text-center mb-30" style={{padding: '20px 15px', marginBottom: '20px'}}>
                 <div className="icon" style={{marginBottom: '15px'}}>
                   <i className="fas fa-boxes"></i>
                 </div>
@@ -260,18 +260,19 @@ export default function Home() {
         <div className="container">
           <div className="counter-wrap-one wow fadeInDown">
             <div className="counter-inner-box">
-              <div className="row g-3">
+              <div className="row g-4">
                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
                   <div className="counter-inner" style={{
-                    padding: '20px 15px',
+                    padding: '25px 20px',
                     textAlign: 'center',
                     borderRadius: '10px',
                     boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
-                    marginBottom: '20px',
+                    marginBottom: '25px',
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    backgroundColor: '#fff'
                   }}>
                     <div className="text">
                       <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
@@ -283,15 +284,16 @@ export default function Home() {
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
                   <div className="counter-inner" style={{
-                    padding: '20px 15px',
+                    padding: '25px 20px',
                     textAlign: 'center',
                     borderRadius: '10px',
                     boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
-                    marginBottom: '20px',
+                    marginBottom: '25px',
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    backgroundColor: '#fff'
                   }}>
                     <div className="text">
                       <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
@@ -303,15 +305,16 @@ export default function Home() {
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
                   <div className="counter-inner" style={{
-                    padding: '20px 15px',
+                    padding: '25px 20px',
                     textAlign: 'center',
                     borderRadius: '10px',
                     boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
-                    marginBottom: '20px',
+                    marginBottom: '25px',
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    backgroundColor: '#fff'
                   }}>
                     <div className="text">
                       <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
@@ -323,15 +326,16 @@ export default function Home() {
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 counter-item">
                   <div className="counter-inner" style={{
-                    padding: '20px 15px',
+                    padding: '25px 20px',
                     textAlign: 'center',
                     borderRadius: '10px',
                     boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
-                    marginBottom: '20px',
+                    marginBottom: '25px',
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    backgroundColor: '#fff'
                   }}>
                     <div className="text">
                       <h2 className="number" style={{fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', marginBottom: '10px'}}>
@@ -361,8 +365,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="row g-5">
-            <div className="col-lg-4 col-md-6">
+          <div className="row g-4">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="feature-card wow fadeInUp" style={{
                 background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
                 padding: '25px 20px',
@@ -397,7 +401,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="feature-card wow fadeInUp" style={{
                 background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
                 padding: '25px 20px',
@@ -432,7 +436,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="feature-card wow fadeInUp" style={{
                 background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
                 padding: '25px 20px',
@@ -467,7 +471,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="feature-card wow fadeInUp" style={{
                 background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
                 padding: '25px 20px',
@@ -502,7 +506,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="feature-card wow fadeInUp" style={{
                 background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
                 padding: '25px 20px',
@@ -537,7 +541,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="feature-card wow fadeInUp" style={{
                 background: 'linear-gradient(135deg, #fef7e0 0%, #ffffff 100%)',
                 padding: '25px 20px',
@@ -616,7 +620,7 @@ export default function Home() {
                         <h5>Customer<br />Satisfaction</h5>
                       </div>
                     </div>
-                  </div>
+                  </div>˝g
                 </div>
               </div>
             </div>
@@ -628,15 +632,15 @@ export default function Home() {
       <Testimonials />
 
      {/* Contact Section - Yellow Theme */}
-     <section className="contact-one p-r z-2 bg-white" style={{ padding: '20px 100px' }}>
+     <section className="contact-one p-r z-2 bg-white" style={{ padding: '20px 15px' }}>
       <div className="container-fluid">
-        <div className="row no-gutters">
-          <div className="col-lg-6">
-            <div className="contact-one_content-box wow fadeInLeft" style={{ padding: '40px 30px' }}>
+        <div className="row g-4">
+          <div className="col-lg-6 col-md-12">
+            <div className="contact-one_content-box wow fadeInLeft" style={{ padding: '30px 20px' }}>
               <div className="contact-wrapper">
                 <div className="section-title text-center mb-20">
                   <span className="sub-title">Get In Touch</span>
-                  <h2>Interested in Our Products? Become a Distributor Today!</h2>
+                  <h2 style={{fontSize: 'clamp(1.5rem, 4vw, 2rem)'}}>Interested in Our Products? Become a Distributor Today!</h2>
                 </div>
                 <div className="contact-form">
                   <form 
@@ -652,7 +656,7 @@ export default function Home() {
                         id="name" 
                         name="name" 
                         required 
-                        style={{ padding: '12px 15px' }}
+                        style={{ padding: '12px 15px', width: '100%' }}
                       />
                     </div>
                     <div className="form_group form-group" style={{ marginBottom: '15px' }}>
@@ -663,7 +667,7 @@ export default function Home() {
                         id="email" 
                         name="email" 
                         required 
-                        style={{ padding: '12px 15px' }}
+                        style={{ padding: '12px 15px', width: '100%' }}
                       />
                     </div>
                     <div className="form_group form-group" style={{ marginBottom: '15px' }}>
@@ -674,7 +678,7 @@ export default function Home() {
                         id="phone" 
                         name="phone" 
                         required 
-                        style={{ padding: '12px 15px' }}
+                        style={{ padding: '12px 15px', width: '100%' }}
                       />
                     </div>
                     <div className="form_group form-group" style={{ marginBottom: '15px' }}>
@@ -685,7 +689,7 @@ export default function Home() {
                         id="location" 
                         name="location" 
                         required 
-                        style={{ padding: '12px 15px' }}
+                        style={{ padding: '12px 15px', width: '100%' }}
                       />
                     </div>
                     <div className="form_group form-group" style={{ marginBottom: '15px' }}>
@@ -695,11 +699,11 @@ export default function Home() {
                         id="message" 
                         name="message" 
                         required 
-                        style={{ padding: '12px 15px', height: '80px' }}
+                        style={{ padding: '12px 15px', height: '80px', width: '100%' }}
                       />
                     </div>
                     <div className="form_group form-group">
-                      <button type="submit" className="main-btn btn-yellow">
+                      <button type="submit" className="main-btn btn-yellow" style={{width: '100%'}}>
                         Send Inquiry
                       </button>
                     </div>
@@ -708,56 +712,56 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12">
             <div 
               className="contact-one_information-box bg_cover wow fadeInRight" 
-              style={{ backgroundImage: "url('https://companyformationindia.com/images/c.jpg')", padding: '40px 30px' }}
+              style={{ backgroundImage: "url('https://companyformationindia.com/images/c.jpg')", padding: '30px 20px', minHeight: '400px' }}
             >
               <div className="information-box">
-                <h3 style={{ marginBottom: '15px' }}>Contact Information</h3>
-                <p style={{ marginBottom: '20px' }}>Get in touch with us for bulk orders, distribution inquiries, or any questions about our products.</p>
+                <h3 style={{ marginBottom: '15px', fontSize: 'clamp(1.2rem, 3vw, 1.5rem)' }}>Contact Information</h3>
+                <p style={{ marginBottom: '20px', fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>Get in touch with us for bulk orders, distribution inquiries, or any questions about our products.</p>
                 
                 <div className="information-item_one d-flex mb-15">
-                  <div className="icon">
-                    <i className="flaticon-placeholder"></i>
+                  <div className="icon" style={{marginRight: '15px', flexShrink: 0}}>
+                    <i className="flaticon-placeholder" style={{fontSize: '20px'}}></i>
                   </div>
                   <div className="info">
-                    <span className="sub-title mb-1">Factory Address</span>
-                    <h5>Khasra No. 118 & 120, Sikeda Road Industrial Area, Modinagar 201204, Distt. GZB, UP</h5>
+                    <span className="sub-title mb-1" style={{fontSize: '0.9rem'}}>Factory Address</span>
+                    <h5 style={{fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', lineHeight: '1.4'}}>Khasra No. 118 & 120, Sikeda Road Industrial Area, Modinagar 201204, Distt. GZB, UP</h5>
                   </div>
                 </div>
                 
                 <div className="information-item_one d-flex mb-15">
-                  <div className="icon">
-                    <i className="flaticon-email"></i>
+                  <div className="icon" style={{marginRight: '15px', flexShrink: 0}}>
+                    <i className="flaticon-email" style={{fontSize: '20px'}}></i>
                   </div>
                   <div className="info">
-                    <span className="sub-title mb-1">Email Address</span>
-                    <h5>
+                    <span className="sub-title mb-1" style={{fontSize: '0.9rem'}}>Email Address</span>
+                    <h5 style={{fontSize: 'clamp(0.9rem, 2.5vw, 1rem)'}}>
                       <a href="mailto:bharatagrooil@yahoo.in">bharatagrooil@yahoo.in</a>
                     </h5>
                   </div>
                 </div>
                 
                 <div className="information-item_one d-flex mb-15">
-                  <div className="icon">
-                    <i className="flaticon-phone-call"></i>
+                  <div className="icon" style={{marginRight: '15px', flexShrink: 0}}>
+                    <i className="flaticon-phone-call" style={{fontSize: '20px'}}></i>
                   </div>
                   <div className="info">
-                    <span className="sub-title mb-1">Phone Number</span>
-                    <h5>
+                    <span className="sub-title mb-1" style={{fontSize: '0.9rem'}}>Phone Number</span>
+                    <h5 style={{fontSize: 'clamp(0.9rem, 2.5vw, 1rem)'}}>
                       <a href="tel:+919219450111">+91 9219450111</a>
                     </h5>
                   </div>
                 </div>
                 
                 <div className="information-item_one d-flex mb-15">
-                  <div className="icon">
-                    <i className="fab fa-whatsapp"></i>
+                  <div className="icon" style={{marginRight: '15px', flexShrink: 0}}>
+                    <i className="fab fa-whatsapp" style={{fontSize: '20px'}}></i>
                   </div>
                   <div className="info">
-                    <span className="sub-title mb-1">WhatsApp</span>
-                    <h5>
+                    <span className="sub-title mb-1" style={{fontSize: '0.9rem'}}>WhatsApp</span>
+                    <h5 style={{fontSize: 'clamp(0.9rem, 2.5vw, 1rem)'}}>
                       <a href="https://wa.me/919219450111" target="_blank" rel="noopener noreferrer">
                         +91 9219450111
                       </a>
