@@ -283,7 +283,7 @@ export default function Services() {
 
       {/* Skill Section */}
       <section className="skill-section-two pt-lg-130">
-        <div className="container-fluid">
+        <div className="container">
           <div className="skill-wrapper-one pb-90 bg_cover" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/4373772c-04dd-4b04-8170-8fcf659107bc.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}>
             <div className="container">
               <div className="row">

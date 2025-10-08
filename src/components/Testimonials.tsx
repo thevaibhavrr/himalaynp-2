@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Testimonials = () => {
   return (
     <section className="testimonial-one  p-r z-1">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-10">
             <div className="section-title text-center mb-60 wow fadeInUp">

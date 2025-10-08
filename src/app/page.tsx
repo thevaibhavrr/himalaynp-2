@@ -720,7 +720,7 @@ Our Premium Products
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="popular-service p-r z-1 pt-80 pb-80" style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>
+      <section className="popular-service p-r z-1 pt-80 pb-80" >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
@@ -950,7 +950,7 @@ Our Premium Products
 
       {/* Manufacturing Facility Section */}
       <section className="offer-section-one p-r z-2">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="offer-one_image-box bg_cover mb-50 wow fadeInRight" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/9b6f3b58-0e49-41b3-b041-2a95c525b2b9.__CR0,0,970,600_PT0_SX970_V1___.jpg')"}}>
@@ -1001,7 +1001,7 @@ Our Premium Products
 
      {/* Contact Section - Yellow Theme */}
      <section className="contact-one p-r z-2 bg-white" style={{ padding: '20px 15px' }}>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row g-4">
           <div className="col-lg-6 col-md-12">
             <div className="contact-one_content-box wow fadeInLeft" style={{ padding: '30px 20px' }}>
