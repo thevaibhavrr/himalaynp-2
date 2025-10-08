@@ -659,7 +659,7 @@ export default function Products() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            padding: '20px',
+            padding: window.innerWidth <= 768 ? '10px' : '20px',
             backdropFilter: 'blur(5px)'
           }}
         >
@@ -668,14 +668,15 @@ export default function Products() {
             onClick={(e) => e.stopPropagation()}
             style={{
               backgroundColor: 'white',
-              borderRadius: '20px',
+              borderRadius: window.innerWidth <= 768 ? '15px' : '20px',
               maxWidth: '900px',
               width: '100%',
-              maxHeight: '95vh',
+              maxHeight: window.innerWidth <= 768 ? '98vh' : '95vh',
               overflowY: 'auto',
               boxShadow: '0 25px 50px rgba(0, 0, 0, 0.4)',
               position: 'relative',
-              border: '1px solid rgba(238, 206, 56, 0.2)'
+              border: '1px solid rgba(238, 206, 56, 0.2)',
+              margin: window.innerWidth <= 768 ? '0' : 'auto'
             }}
           >
             {/* Close Button */}
@@ -683,14 +684,14 @@ export default function Products() {
               onClick={closeModal}
               style={{
                 position: 'absolute',
-                top: '20px',
-                right: '20px',
+                top: window.innerWidth <= 768 ? '15px' : '20px',
+                right: window.innerWidth <= 768 ? '15px' : '20px',
                 background: 'rgba(255, 255, 255, 0.9)',
                 border: 'none',
-                width: '40px',
-                height: '40px',
+                width: window.innerWidth <= 768 ? '35px' : '40px',
+                height: window.innerWidth <= 768 ? '35px' : '40px',
                 borderRadius: '50%',
-                fontSize: '20px',
+                fontSize: window.innerWidth <= 768 ? '18px' : '20px',
                 cursor: 'pointer',
                 color: '#666',
                 zIndex: 10,
@@ -719,23 +720,25 @@ export default function Products() {
             <div style={{padding: '0'}}>
               {/* Product Details Section */}
               <div style={{
-                padding: '40px',
+                padding: window.innerWidth <= 768 ? '20px' : '40px',
                 background: 'white'
               }}>
                 <div style={{
                   display: 'flex',
-                  gap: '40px',
+                  flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
+                  gap: window.innerWidth <= 768 ? '20px' : '40px',
                   alignItems: 'flex-start',
                   marginBottom: '30px'
                 }}>
                   {/* Product Image */}
                   <div style={{
-                    flex: '0 0 250px',
+                    flex: window.innerWidth <= 768 ? 'none' : '0 0 250px',
+                    width: window.innerWidth <= 768 ? '100%' : 'auto',
                     position: 'relative'
                   }}>
                     <div style={{
                       background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
-                      padding: '20px',
+                      padding: window.innerWidth <= 768 ? '15px' : '20px',
                       borderRadius: '15px',
                       border: '2px solid #eece38',
                       position: 'relative',
@@ -760,7 +763,7 @@ export default function Products() {
                         alt={selectedProduct.name}
                         style={{
                           width: '100%',
-                          height: '200px',
+                          height: window.innerWidth <= 768 ? '150px' : '200px',
                           objectFit: 'contain',
                           borderRadius: '10px',
                           transition: 'transform 0.3s ease'
@@ -776,11 +779,12 @@ export default function Products() {
                   </div>
                   
                   {/* Product Info */}
-                  <div style={{flex: 1}}>
+                  <div style={{flex: 1, width: window.innerWidth <= 768 ? '100%' : 'auto'}}>
                     <div style={{
                       display: 'flex',
-                      alignItems: 'center',
-                      gap: '15px',
+                      flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
+                      alignItems: window.innerWidth <= 768 ? 'flex-start' : 'center',
+                      gap: window.innerWidth <= 768 ? '10px' : '15px',
                       marginBottom: '20px'
                     }}>
                       <span style={{
@@ -790,7 +794,8 @@ export default function Products() {
                         borderRadius: '25px',
                         fontSize: '14px',
                         fontWeight: 600,
-                        boxShadow: '0 2px 8px rgba(238, 206, 56, 0.3)'
+                        boxShadow: '0 2px 8px rgba(238, 206, 56, 0.3)',
+                        display: 'inline-block'
                       }}>
                         {selectedProduct.badge}
                       </span>
@@ -800,14 +805,15 @@ export default function Products() {
                         background: '#f8f9fa',
                         padding: '8px 15px',
                         borderRadius: '20px',
-                        textTransform: 'capitalize'
+                        textTransform: 'capitalize',
+                        display: 'inline-block'
                       }}>
                         {selectedProduct.category} Oil
                       </span>
                     </div>
                     
                     <h3 style={{
-                      fontSize: '28px',
+                      fontSize: window.innerWidth <= 768 ? '22px' : '28px',
                       fontWeight: 700,
                       marginBottom: '15px',
                       color: '#333',
@@ -827,17 +833,18 @@ export default function Products() {
                     
                     <div style={{
                       display: 'flex',
-                      gap: '30px',
-                      alignItems: 'center',
+                      flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
+                      gap: window.innerWidth <= 768 ? '15px' : '30px',
+                      alignItems: window.innerWidth <= 768 ? 'flex-start' : 'center',
                       marginBottom: '25px',
-                      padding: '20px',
+                      padding: window.innerWidth <= 768 ? '15px' : '20px',
                       background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
                       borderRadius: '12px',
                       border: '1px solid #dee2e6'
                     }}>
                       <div>
                         <div style={{
-                          fontSize: '28px',
+                          fontSize: window.innerWidth <= 768 ? '24px' : '28px',
                           fontWeight: 700,
                           color: '#333',
                           marginBottom: '5px'
@@ -853,12 +860,14 @@ export default function Products() {
                           {selectedProduct.size}
                         </div>
                       </div>
-                      <div style={{
-                        width: '2px',
-                        height: '40px',
-                        background: '#eece38',
-                        borderRadius: '1px'
-                      }}></div>
+                      {window.innerWidth > 768 && (
+                        <div style={{
+                          width: '2px',
+                          height: '40px',
+                          background: '#eece38',
+                          borderRadius: '1px'
+                        }}></div>
+                      )}
                       <div style={{
                         color: '#666',
                         fontSize: '16px',
@@ -870,7 +879,7 @@ export default function Products() {
                     
                     <div>
                       <h4 style={{
-                        fontSize: '20px',
+                        fontSize: window.innerWidth <= 768 ? '18px' : '20px',
                         fontWeight: 600,
                         marginBottom: '15px',
                         color: '#333',
@@ -883,7 +892,7 @@ export default function Products() {
                       </h4>
                       <div style={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                        gridTemplateColumns: window.innerWidth <= 768 ? '1fr' : 'repeat(auto-fit, minmax(250px, 1fr))',
                         gap: '10px'
                       }}>
                         {selectedProduct.features.map((feature: string, index: number) => (
@@ -926,7 +935,7 @@ export default function Products() {
               {/* Contact Section */}
               <div style={{
                 background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
-                padding: '40px',
+                padding: window.innerWidth <= 768 ? '20px' : '40px',
                 borderRadius: '0 0 20px 20px',
                 borderTop: '1px solid #dee2e6'
               }}>
@@ -934,7 +943,8 @@ export default function Products() {
 
                 <div style={{
                   display: 'flex',
-                  gap: '20px',
+                  flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
+                  gap: window.innerWidth <= 768 ? '15px' : '20px',
                   justifyContent: 'center',
                   flexWrap: 'wrap',
                   marginBottom: '30px'
@@ -944,16 +954,17 @@ export default function Products() {
                     style={{
                       background: 'linear-gradient(135deg, #eece38 0%, #d4b82a 100%)',
                       color: '#000',
-                      padding: '18px 35px',
+                      padding: window.innerWidth <= 768 ? '15px 25px' : '18px 35px',
                       borderRadius: '12px',
                       textDecoration: 'none',
                       fontWeight: 600,
-                      fontSize: '16px',
+                      fontSize: window.innerWidth <= 768 ? '14px' : '16px',
                       transition: 'all 0.3s ease',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '10px',
-                      minWidth: '180px',
+                      minWidth: window.innerWidth <= 768 ? 'auto' : '180px',
+                      width: window.innerWidth <= 768 ? '100%' : 'auto',
                       justifyContent: 'center',
                       boxShadow: '0 4px 15px rgba(238, 206, 56, 0.3)',
                       border: '2px solid transparent'
@@ -978,16 +989,17 @@ export default function Products() {
                     style={{
                       background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
                       color: 'white',
-                      padding: '18px 35px',
+                      padding: window.innerWidth <= 768 ? '15px 25px' : '18px 35px',
                       borderRadius: '12px',
                       textDecoration: 'none',
                       fontWeight: 600,
-                      fontSize: '16px',
+                      fontSize: window.innerWidth <= 768 ? '14px' : '16px',
                       transition: 'all 0.3s ease',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '10px',
-                      minWidth: '180px',
+                      minWidth: window.innerWidth <= 768 ? 'auto' : '180px',
+                      width: window.innerWidth <= 768 ? '100%' : 'auto',
                       justifyContent: 'center',
                       boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)',
                       border: '2px solid transparent'

@@ -374,7 +374,7 @@ export default function Recipes() {
       </section>
 
       {/* Product Showcase Section */}
-      <section className="product-showcase-section position-relative z-1 pt-80 pb-80" style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>
+      <section className="product-showcase-section position-relative z-1 pt-80 pb-40" style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -407,6 +407,31 @@ export default function Recipes() {
                   }}>
                     <h5 style={{color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '10px', textAlign: 'center'}}>Sunflower Oil</h5>
                     <p style={{color: 'white', fontSize: '14px', textAlign: 'center', margin: 0}}>Light & versatile</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="oil-showcase-item mb-30">
+                <div className="oil-img-container" style={{position: 'relative', overflow: 'hidden', borderRadius: '15px', transition: 'transform 0.3s ease'}}>
+                  <img src="https://www.jiomart.com/images/product/original/rvq91jjsaj/himalayan-yellow-mustard-oil-5l-tin-fortified-with-vitamin-a-d-product-images-orvq91jjsaj-p594025363-0-202209241256.jpg?im=Resize=(1000,1000)" alt="Sesame Oil" style={{width: '100%', height: '200px', objectFit: 'contain', borderRadius: '15px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)'}} />
+                  <div className="oil-overlay" style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: 'linear-gradient(45deg, rgba(238, 206, 56, 0.9), rgba(238, 206, 56, 0.7))',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    opacity: 0,
+                    transition: 'opacity 0.3s ease',
+                    borderRadius: '15px'
+                  }}>
+                    <h5 style={{color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '10px', textAlign: 'center'}}>Sesame Oil</h5>
+                    <p style={{color: 'white', fontSize: '14px', textAlign: 'center', margin: 0}}>Rich & aromatic</p>
                   </div>
                 </div>
               </div>
