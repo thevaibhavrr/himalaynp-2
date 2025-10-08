@@ -35,7 +35,7 @@ export default function PageBanner({
             alt="Bharat Agro Oil Logo" 
             width={120} 
             height={120} 
-            style={{maxWidth: '120px'}} 
+            style={{maxWidth: '190px' , width: '100%'}} 
           />
           <h3>Bharat Agro Oil</h3>
           <p>Premium Edible Oils Since 1978</p>

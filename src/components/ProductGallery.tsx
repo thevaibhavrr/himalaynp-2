@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const ProductGallery = () => {
   return (
-    <section className="projects-section pt-10 pb-95 p-r z-1" style={{
+    <section className="projects-section pt-0 pb-95 p-r z-1" style={{
       position: 'relative',
       overflow: 'hidden'
     }}>

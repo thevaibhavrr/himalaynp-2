@@ -8,6 +8,7 @@ import ProductGallery from '@/components/ProductGallery'
 import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 // Type declarations for jQuery and Slick
 interface JQuery {
@@ -33,6 +34,8 @@ declare global {
 }
 
 export default function Home() {
+  const router = useRouter()
+  
   useEffect(() => {
     // Initialize slider after component mounts
     const initializeSlider = () => {
@@ -214,7 +217,7 @@ export default function Home() {
       <AboutSection />
 
       {/* Services Section */}
-      <section className="service-one dark-black-bg p-130 pb-25 p-r z-1 mb-100" style={{
+      <section className="service-one dark-black-bg p-130 pb-25 p-r z-1 mb-50" style={{
         background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)',
         position: 'relative',
         overflow: 'hidden'
@@ -264,7 +267,13 @@ Our Premium Products
             </div>
           </div>
           <div className="row mb-100 g-4 mobile-gap-5">
-            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12"
+            onClick={
+              () => {
+                router.push('/products?category=coconut')
+              }
+            }
+            >
               <div className="service-box text-center mb-30 wow fadeInUp" style={{
                 padding: '30px 20px',
                 marginBottom: '20px',
@@ -278,6 +287,7 @@ Our Premium Products
                 flexDirection: 'column',
                 justifyContent: 'center'
               }}
+            
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-10px)';
                 e.currentTarget.style.boxShadow = '0 15px 30px rgba(255, 193, 7, 0.3)';
@@ -305,7 +315,7 @@ Our Premium Products
                 </div>
                 <div className="text">
                   <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
-                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                    <Link href="/products?category=mustard" style={{color: 'white', textDecoration: 'none'}}>
                       Mustard Oil<br />
                       <span style={{color: '#ffc107', fontSize: '14px'}}>Pure & Natural</span>
                     </Link>
@@ -354,7 +364,7 @@ Our Premium Products
                 </div>
                 <div className="text">
                   <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
-                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                    <Link href="/products?category=soybean" style={{color: 'white', textDecoration: 'none'}}>
                       Soybean Oil<br />
                       <span style={{color: '#ffc107', fontSize: '14px'}}>Heart Healthy</span>
                     </Link>
@@ -403,7 +413,7 @@ Our Premium Products
                 </div>
                 <div className="text">
                   <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
-                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                    <Link href="/products?category=sunflower" style={{color: 'white', textDecoration: 'none'}}>
                       Sunflower Oil<br />
                       <span style={{color: '#ffc107', fontSize: '14px'}}>Light & Healthy</span>
                     </Link>
@@ -452,7 +462,7 @@ Our Premium Products
                 </div>
                 <div className="text">
                   <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
-                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                    <Link href="/products?category=groundnut" style={{color: 'white', textDecoration: 'none'}}>
                       Groundnut Oil<br />
                       <span style={{color: '#ffc107', fontSize: '14px'}}>Rich Flavor</span>
                     </Link>
@@ -501,7 +511,7 @@ Our Premium Products
                 </div>
                 <div className="text">
                   <h3 className="title" style={{fontSize: '16px', lineHeight: '1.4', color: 'white'}}>
-                    <Link href="/products" style={{color: 'white', textDecoration: 'none'}}>
+                    <Link href="/products?category=blended" style={{color: 'white', textDecoration: 'none'}}>
                       Blended Oils<br />
                       <span style={{color: '#ffc107', fontSize: '14px'}}>Perfect Balance</span>
                     </Link>

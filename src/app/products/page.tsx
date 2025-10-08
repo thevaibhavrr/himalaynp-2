@@ -5,13 +5,23 @@ import Footer from '@/components/Footer'
 import PageBanner from '@/components/PageBanner'
 import { getBannerImage } from '@/config/bannerImages'
 import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 export default function Products() {
+  const searchParams = useSearchParams()
   const [activeFilter, setActiveFilter] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
   const [productCount, setProductCount] = useState(16)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null)
+
+  // Handle category from URL parameter
+  useEffect(() => {
+    const category = searchParams.get('category')
+    if (category) {
+      setActiveFilter(category)
+    }
+  }, [searchParams])
 
   // Product data
   const products = [
