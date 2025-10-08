@@ -1,7 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import PageBanner from '@/components/PageBanner'
-import { getBannerImage } from '@/config/bannerImages'
+import Image from 'next/image'
 
 
 export default function Contact() {
@@ -10,11 +9,22 @@ export default function Contact() {
       <Header />
       
       {/* Page Banner */}
-      <PageBanner 
-        backgroundImage={getBannerImage('contact')}
-        title="Contact Us"
-        subtitle="Get in Touch for Premium Quality Edible Oils"
-      />
+      <section className="page-banner bg_cover p-r z-1" 
+        style={{
+          backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          minHeight: '600px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+        <div className="brand-card text-center">
+          <Image src="/assets/images/logo/new-logo.png" alt="Bharat Agro Oil Logo" width={120} height={120} style={{maxWidth: '120px'}} />
+          <h3>Bharat Agro Oil</h3>
+          <p>Premium Edible Oils Since 1978</p>
+        </div>
+      </section>
 
       {/* Contact Information Section */}
       <section className="contact-information-one p-r z-1 pt-80 pb-60" style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>
@@ -236,21 +246,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="contact-page-map">
-        <div className="map-box">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.456789012345!2d77.56789012345678!3d28.87654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c7a8a8a8a8a8a%3A0x8a8a8a8a8a8a8a8a!2sModinagar%2C%20Ghaziabad%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
-            width="100%" 
-            height="450" 
-            style={{border: 0}} 
-            allowFullScreen 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
       <section className="contact-three pt-60 pb-50 wow fadeInUp" style={{backgroundImage: "url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/04e43dda-759c-472b-8759-b77a082fd5fd.__CR0,0,970,600_PT0_SX970_V1___.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', position: 'relative'}}>
         <div style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.6)', zIndex: 1}}></div>
@@ -317,6 +312,23 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <section className="contact-page-map">
+        <div className="map-box">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.456789012345!2d77.56789012345678!3d28.87654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c7a8a8a8a8a8a%3A0x8a8a8a8a8a8a8a8a!2sModinagar%2C%20Ghaziabad%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style={{border: 0}} 
+            allowFullScreen 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      
 
       <Footer />
     </>
