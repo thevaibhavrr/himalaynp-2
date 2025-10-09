@@ -118,7 +118,7 @@ export default function About() {
       </section>
 
       {/* Image Gallery Section */}
-      <section className="image-gallery-section p-r z-1 pt-80 pb-80" style={{backgroundColor: '#f8f9fa'}}>
+      <section className="image-gallery-section p-r z-1 pt-20 pb-40" style={{backgroundColor: '#f8f9fa'}}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -248,7 +248,7 @@ export default function About() {
       </section>
 
       {/* Manufacturing Process Section */}
-      <section className="manufacturing-process-section p-r z-1 pt-80 pb-80"
+      <section className="manufacturing-process-section p-r z-1 pt-20 pb-80"
         style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)'}}>
         <div className="container">
           <div className="row">
@@ -318,7 +318,7 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="team-section p-r z-1 pt-80 pb-80" style={{backgroundColor: '#f8f9fa'}}>
+      <section className="team-section p-r z-1 pt-20 pb-80" style={{backgroundColor: '#f8f9fa'}}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -563,7 +563,7 @@ export default function About() {
       </section>
 
       {/* Facilities Showcase Section */}
-      <section className="facilities-showcase-section p-r z-1 pt-80 pb-80"
+      <section className="facilities-showcase-section p-r z-1 pt-20 pb-80"
         style={{background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)'}}>
         <div className="container">
           <div className="row">
