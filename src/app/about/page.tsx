@@ -633,7 +633,7 @@ export default function About() {
       </section>
 
       {/* Manufacturing Section */}
-      <section className="about-section p-r z-1 pt-80 pb-80 dark-black-bg text-white">
+      <section className="about-section p-r z-1 pt-80 pb-0 dark-black-bg text-white">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -802,7 +802,7 @@ export default function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="farmers-team_two light-gray-bg pb-90 pt-10">
+      <section className="farmers-team_two light-gray-bg pb-90 pt-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">

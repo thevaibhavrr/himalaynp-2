@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="row">
               <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12">
                 <div className="footer-widget about-widget mb-30 wow fadeInDown">
-                  <div className="footer-logo mb-20" style={{marginBottom: '20px'}}>
+                  <div className="footer-logo mb-20 ps-3 " style={{marginBottom: '20px' ,paddingLeft: '60px'}}>
                     <div style={{
                       backgroundColor: '#fff',
                       padding: '15px 20px',
@@ -73,7 +73,7 @@ export default function Footer() {
                   <h4 className="widget-title" style={{fontSize: '18px', marginBottom: '15px'}}>Distribution Areas</h4>
                   <div className="distribution-areas">
                     <h5 style={{fontSize: '16px', marginBottom: '10px'}}>We Serve In:</h5>
-                    <ul style={{fontSize: '14px', lineHeight: '1.6', marginBottom: '15px'}}>
+                    <ul className='' style={{fontSize: '14px', lineHeight: '1.6', marginBottom: '15px'}}>
                       <li style={{marginBottom: '6px'}}>Uttar Pradesh</li>
                       <li style={{marginBottom: '6px'}}>Bihar</li>
                       <li style={{marginBottom: '6px'}}>Delhi</li>
